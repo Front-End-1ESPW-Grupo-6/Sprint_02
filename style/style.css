@@ -1,0 +1,697 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+body{
+background-color: #ffffff;
+}
+
+p{
+  margin-bottom: 0.5em;
+}
+
+/* Inicio navbar */
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  header {
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 25px 2%;
+    background-color: #f4f4f4;
+  }
+  
+  header img{
+    margin-right: auto;
+    width: 12%;
+  }
+  
+  .nav__links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav__links a,
+  .cta,
+  .overlay__content a {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #c2c0c3;
+    text-decoration: none;
+  }
+  
+  .nav__links li {
+    padding: 0px 20px;
+  }
+  
+  .nav__links li a {
+    transition: all 0.3s ease 0s;
+  }
+  
+  .nav__links li a:hover {
+    color: #0f62fe;
+  }
+  
+  .cta {
+    margin-left: 20px;
+    padding: 9px 25px;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+  }
+  
+  .cta:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  
+  /* Fim navbar */
+
+  /* Inicio Home */
+  .home-container {
+    width: auto;
+    height: 90vh;
+    margin: 0 auto;
+    padding-top: 10em;
+  }
+  
+  .home-content {
+    display: flex;
+    align-items: center;
+    padding-left: 3em;
+    padding-top: 2em;
+    padding-bottom: 5.3em;
+  }
+  
+  .home-image img {
+    width: 140%;
+    height: auto;
+    padding-left: 6em;
+  }
+
+  .home-text p:first-child{
+    font-size: 3em;
+    font-weight: bold;
+    color: #0f62fe;
+  }
+  
+  .home-text {
+    width: 40%;
+    padding-left: 1em;
+    padding-right: 10em;
+  }
+  
+  .home-text p {
+    font-size: 1.1em;
+  }
+
+  .home-text p:last-child{
+    font-weight: bold;
+  }
+  /* Fim Home */
+
+  /* Inicio Problema */
+  .problema-container {
+    width: auto;
+    height: 90vh;
+    margin: 0 auto;
+    padding-top: 4.5em;
+    background-color: #f3f3f3;
+  }
+  
+  .problema-content {
+    display: flex;
+    align-items: center;
+    padding-left: 3em;
+    padding-top: 2em;
+  }
+  
+  .problema-image img {
+    width: 110%;
+    height: auto;
+  }
+
+  .problema-text p:first-child{
+    font-size: 3em;
+    font-weight: bold;
+    color: #0f62fe;
+  }
+  
+  .problema-text {
+    width: 60%;
+    padding-left: 20em;
+    padding-right: 1em;
+  }
+  
+  .problema-text p {
+    font-size: 1.1em;
+    line-height: 1.5;
+    text-align: end;
+  }
+
+  /* Fim Problemas */
+
+  /* Inicio causas */
+  .causas-container {
+    width: auto;
+    height: 95vh;
+    margin: 0 auto;
+  }
+  
+  .causas-title{
+    font-size: 3em;
+    text-align: center;
+    color: #0f62fe;
+    padding-top: 3em;
+    font-weight: bold;
+  }
+  
+  .causas-content{
+    position: static;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1em;
+    padding-left: 13em;
+    padding-right: 13em;
+  }
+  
+  .causas-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+    grid-gap: 2em;
+  }
+  
+  .causas-content .card{
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .causas-content .card .face{
+    width: 300px;
+    height: 200px;
+    transition: 0.5s;
+  }
+  
+  .causas-content .card .face.face1{
+    position: relative;
+    background: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+    border-radius: 1em;
+  }
+  
+  .causas-content .card:hover .face.face1{
+    background: #0f62fe;
+    transform: translateY(0);
+    border-radius: 1em 1em 0 0;
+  }
+  
+  .causas-content .card .face.face1 .content{
+    opacity: 0.2;
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .causas-content .card:hover .face.face1 .content{
+    opacity: 1;
+  }
+  
+  .causas-content .card .face.face1 .content img{
+    max-width: 100px;
+    margin: auto;
+  }
+  
+  .causas-content .card .face.face1 .content h3{
+    margin: auto;
+    padding: 0;
+    color: #000000;
+    text-align: center;
+    font-size: 1.5em;
+  }
+  
+  .causas-content .card .face.face2{
+    position: relative;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 20px rgba(214, 214, 214, 0.8);
+    transform: translateY(-100px);
+    border-radius: 1em;
+  }
+  
+  .causas-content .card:hover .face.face2{
+    transform: translateY(0);
+    border-radius: 0 0 1em 1em;
+  }
+  
+  .causas-content .card .face.face2 .content p{
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Fim causas */
+
+  /* Inicio impactos */
+  .impactos-container {
+    width: auto;
+    height: 110vh;
+    margin: 0 auto;
+    padding-top: 15em;
+  }
+  
+  .impactos-content {
+    display: flex;
+    align-items: center;
+    padding-left: 3em;
+    padding-top: 10em;
+  }
+
+  .impactos-text p:first-child{
+    font-size: 3em;
+    font-weight: bold;
+    color: #0f62fe;
+  }
+  
+  .impactos-text {
+    width: 75%;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  
+  .impactos-text p {
+    font-size: 1.1em;
+    text-align: start;
+  }
+  /* Fim impactos */
+
+  /* Inicio Solução */
+  .solucao-container {
+    width: auto;
+    height: 40vh;
+    margin: 0 auto;
+  }
+  
+  .solucao-title{
+    font-size: 3em;
+    text-align: end;
+    color: #0f62fe;
+    padding-top: 2.5em;
+    font-weight: bold;
+    padding-right: 1em;
+  }
+  
+  .solucao-content{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 13em;
+    padding-right: 13em;
+  }
+  
+  .solucao-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+    grid-gap: 2em;
+  }
+  
+  .solucao-content .card{
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .solucao-content .card .face{
+    width: 300px;
+    height: 200px;
+    transition: 0.5s;
+  }
+  
+  .solucao-content .card .face.face1{
+    position: relative;
+    background: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+    border-radius: 1em;
+  }
+  
+  .solucao-content .card:hover .face.face1{
+    background: #0f62fe;
+    transform: translateY(0);
+    border-radius: 1em 1em 0 0;
+  }
+  
+  .solucao-content .card .face.face1 .content{
+    opacity: 0.2;
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .solucao-content .card:hover .face.face1 .content{
+    opacity: 1;
+  }
+  
+  .solucao-content .card .face.face1 .content img{
+    max-width: 100px;
+    margin: auto;
+  }
+  
+  .solucao-content .card .face.face1 .content h3{
+    margin: auto;
+    padding: 0;
+    color: #000000;
+    text-align: center;
+    font-size: 1.5em;
+  }
+  
+  .solucao-content .card .face.face2{
+    position: relative;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 20px rgba(214, 214, 214, 0.8);
+    transform: translateY(-100px);
+    border-radius: 1em;
+  }
+  
+  .solucao-content .card:hover .face.face2{
+    transform: translateY(0);
+    border-radius: 0 0 1em 1em;
+  }
+  
+  .solucao-content .card .face.face2 .content p{
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Inicio texto solucao */
+  .solucao-text{
+    text-align: end;
+    align-items: flex-end;
+    padding-left: 25em;
+    padding-right: 2em;
+    margin-top: 1em;
+  }
+
+  .solucao-text p{
+    font-size: 1.1em;
+    line-height: 1.5;
+  }
+
+  .solucao-text p:nth-child(1){
+    color: #0f62fe;
+    font-weight: bold;
+  }
+  
+  /* Fim texto solucao */
+  /* Fim Solução */
+
+  /* Inico Quem somos */
+  .quem-somos-container {
+    width: auto;
+    height: 90vh;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding-top: 0em;
+  }
+
+  .quem-somos-content {
+    display: flex;
+    align-items: center;
+    padding-left: 3em;
+    padding-top: 7em;
+  }
+  
+  .quem-somos-image img {
+    width: 95%;
+    height: auto;
+    padding-left: 5em;
+  }
+
+  .quem-somos-text p:first-child{
+    font-size: 3em;
+    font-weight: bold;
+    color: #0f62fe;
+  }
+  
+  .quem-somos-text {
+    width: 75%;
+    padding-left: 1em;
+  }
+  
+  .quem-somos-text p {
+    font-size: 1.1em;
+    line-height: 1.5;
+    text-align: start;
+  }
+  /* Fim Quem somos */
+
+  /* Inicio Equipe */
+  
+  .equipe-container {
+    width: auto;
+    height: 55vh;
+    margin: 0 auto;
+    padding-top: 0.7em;
+  }
+  
+  .equipe-title {
+    font-size: 3em;
+    text-align: center;
+    color: #0f62fe;
+    padding-top: 2.5em;
+    font-weight: bold;
+  }
+
+  .equipe-section {
+    display: flex;
+    min-height: 100%;
+    align-items: center;
+    justify-content: center;
+    padding-top: -10em;
+  }
+
+  .equipe-card-container {
+    display: flex;
+    gap: 30px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .equipe-card{
+    position: relative;
+    list-style: none;
+    width: 220px;
+    transition: .3s ease;
+  }
+
+  .equipe-card::before {
+    content: "";
+    display: block;
+    padding-bottom: 150%;
+    width: 100%;
+  }
+
+  .equipe-card-background{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+    border-radius: 20px;
+    background-size: 350px;
+    background-position: center;
+    filter: brightness(.9) saturate(1) contrast(1);
+    transform-origin: bottom;
+    transform: scale(1) translateZ(0);
+    transition: .3s ease;
+  }
+
+  .equipe-card:hover .equipe-card-background{
+    transform: scale(1.15) translateZ(0);
+    background-size: 260px;
+  }
+
+  .equipe-card-container:hover .equipe-equipe-card:not(:hover) {
+    transform: scale(.9);
+  }
+  .equipe-card-container:hover > .equipe-card:not(:hover) .equipe-card-background,
+  .equipe-card-container:hover > .equipe-card:not(:hover) .equipe-card-category{
+    filter: brightness(.5) saturate(0) contrast(1.2) blur(20px);
+  }
+
+  .equipe-content {
+    top: 50%;
+    left: 0;
+    padding: 25px;
+    position: absolute;
+  }
+
+  .equipe-card-category{
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 5px;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+  }
+  
+  .equipe-card-heading{
+    color: #ffffff;
+    font-size: 25px;
+    line-height: 1;
+    text-shadow: 2px 2px 20px rgba(0, 0, 0, .2);
+  }
+
+  /* Fim Equipe */
+
+  /* Inicio Login */
+
+  .login-container {
+    width: auto;
+    height: 100vh;
+    margin: 0 auto;
+  }
+  
+  .login-title {
+    font-size: 3em;
+    text-align: center;
+    color: #0f62fe;
+    font-weight: bold;
+    padding-top: 5em;
+  }
+
+  label {
+    font-family: "Raleway", sans-serif;
+    font-size: 11pt;
+  }
+
+  #forgot-pass {
+    color: #0f62fe;
+    font-family: "Raleway", sans-serif;
+    font-size: 10pt;
+    margin-top: 3px;
+    text-align: right;
+  }
+
+  #login-card {
+    background: #fbfbfb;
+    border-radius: 8px;
+    box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
+    height: 33em;
+    margin: 2rem auto 8.1rem auto;
+    width: 25em;
+  }
+
+  #login-card-content {
+    padding: 12px 44px;
+  }
+
+  #login-card-title {
+    padding-bottom: 23px;
+    padding-top: 13px;
+    text-align: center;
+  }
+
+  #signup {
+    color: #0f62fe;
+    font-size: 10pt;
+    margin-top: 16px;
+    text-align: center;
+  }
+
+  #submit-btn {
+    background: #0f62fe;
+    border: none;
+    border-radius: 21px;
+    box-shadow: 0px 1px 8px #ffffff;
+    cursor: pointer;
+    color: white;
+
+    height: 42.3px;
+    margin: 0 auto;
+    margin-top: 50px;
+    transition: 0.25s;
+    width: 153px;
+  }
+
+  #submit-btn:hover {
+    box-shadow: 0px 1px 18px #afafaf;
+  }
+
+  .form {
+    align-items: left;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form-border {
+    background: -webkit-linear-gradient(right, #ffffff, #0f62fe);
+    height: 1px;
+    width: 100%;
+  }
+
+  .form-content {
+    background: #fbfbfb;
+    border: none;
+    outline: none;
+    padding-top: 14px;
+  }
+  
+  .underline-title {
+    background: -webkit-linear-gradient(right, #ffffff, #0f62fe);
+    height: 2px;
+    margin: 0em auto 0 auto;
+    width: 89px;
+  }
+
+  /* Fim Login */
+
+  /* Inicio rodapé */
+
+  .rodape-container {
+    width: auto;
+    height: 12vh;
+    margin: 0 auto;
+    background-color: #0c0c0c;
+  }
+
+  .rodape-content{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 13em;
+    padding-right: 13em;
+    align-items: center;
+  }
+
+  .rodape-content img:nth-child(1){
+    width: 17%;
+    height: 17%;
+  }
+
+  .rodape-content img:nth-child(2){
+    width: 21%;
+    height: 21%;
+  }
+
+  /* Fim rodapé */

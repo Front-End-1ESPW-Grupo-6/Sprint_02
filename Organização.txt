@@ -1,0 +1,35 @@
+*****Conteúdo site****
+
+-----Cor-----
+
+background dark: #0f62fe;
+background light: #f3f3f3;
+Text color: #ffffff;
+Text color2: #c2c0c3;
+
+#0f62fe
+#0c4cbc
+#92aade
+#f4f4f4
+#fcfdff
+
+-----Seções----
+
+1.Header
+2.Home
+3.Problema abordado
+4.Principais raízes do problema
+5.impactos negativos que o problema causa/impacto positivos da nossa solução
+6.Proposta de solução
+7.Quem somos
+8.Contato
+9.Footer
+
+-----Causas-----
+Chuvas intensas
+Urbanização
+Mudanças climáticvas
+Mau uso do solo
+Desmatamento
+Deficiência de drenagem
+
