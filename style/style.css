@@ -125,7 +125,7 @@ p{
     height: 100vh;
     margin: 0 auto;
     padding-top: 4.3em;
-    background-color: #f3f3f3;
+    background: linear-gradient(#ffffff, #e8e8e8 15%);
   }
   
   .problema-content {
@@ -166,6 +166,7 @@ p{
     width: auto;
     height: 100vh;
     margin: 0 auto;
+    background: linear-gradient(#e8e8e8, #ffffff 15%);
   }
   
   .causas-title{
@@ -273,7 +274,7 @@ p{
     width: auto;
     height: 100vh;
     margin: 0 auto;
-    background-color: #f3f3f3;
+    background: linear-gradient(#ffffff, #e8e8e8 15%);
   }
   
   .impactos-content {
@@ -311,6 +312,7 @@ p{
     width: auto;
     height: 100vh;
     margin: 0 auto;
+    background: linear-gradient(#e8e8e8, #ffffff 15%);
   }
   
   .solucao-title {
@@ -441,6 +443,7 @@ p{
     margin: 0 auto;
     background-color: #f3f3f3;
     padding-top: 0em;
+    background: linear-gradient(#ffffff, #e8e8e8 15%);
   }
 
   .quem-somos-content {
@@ -481,6 +484,7 @@ p{
     height: 55vh;
     margin: 0 auto;
     padding-top: 0.7em;
+    background: linear-gradient(#e8e8e8, #ffffff 15%);
   }
   
   .equipe-title {
