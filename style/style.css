@@ -25,6 +25,7 @@ p{
     align-items: center;
     padding: 25px 2%;
     background-color: #f4f4f4;
+    z-index: 2;
   }
   
   header img{
