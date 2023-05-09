@@ -12,6 +12,7 @@ Text color2: #c2c0c3;
 #92aade
 #f4f4f4
 #fcfdff
+#d9d9d9
 
 -----Seções----
 
