@@ -19,7 +19,8 @@ loginClick.addEventListener("click", (login)=>{
   let senhaInput = document.querySelector("#senha").value;
   listaDeUsuario.forEach(usuario => {
     if (usuario.emailUser === emailInput && usuario.senhaUser === senhaInput){
-      console.log("deu bom") //alterar para interação no site
+      console.log("deu bom") 
+      localStorage.setItem("logged_in", true);//alterar para interação no site
     }else{
       console.log("deu ruim") //alterar para interação no site
     }
@@ -35,6 +36,14 @@ cadastroClick.addEventListener("click", (cadastro)=>{
       senhaUser: senhaInput    //alterar para melhor tratamento
     }
     userList.push(newUser);
+  }
+})
+//Verificação se o usuario esta logado
+window.addEventListener("load", (logged)=>{
+  if (localStorage.getItem("logged_in")) {
+                                                        // alterar para usuario logado
+  } else {
+                                                         // Ualterar para usuario deslogado
   }
 })
 
