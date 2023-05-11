@@ -14,6 +14,7 @@ userList.push(user1);
 localStorage.setItem("usersList", JSON.stringify(userList));
 //Login
 loginClick.addEventListener("click", (login)=>{
+  login.preventDefault()
   let listaDeUsuario = JSON.parse(localStorage.getItem("usersList"));
   let emailInput = document.querySelector("#email").value;
   let senhaInput = document.querySelector("#senha").value;
@@ -24,7 +25,10 @@ loginClick.addEventListener("click", (login)=>{
       localStorage.setItem("logged_in", true);//alterar para interação no site
       localStorage.setItem("usuarioLogado", usuario)
     }else{
-      console.log("deu ruim") //adicionar menssagem de erro, tratamento de bloco email  e senha
+      localStorage.setItem("logged_in", false);
+      var loggeda = localStorage.getItem("logged_in");
+      console.log(loggeda);
+      console.log("deu ruim"); //adicionar menssagem de erro, tratamento de bloco email  e senha
     }
   });
 })
@@ -43,7 +47,7 @@ cadastroClick.addEventListener("click", (cadastro)=>{
 //Verificação se o usuario esta logado
 window.addEventListener("load", (logged)=>{
   if (localStorage.getItem("logged_in")) {
-                                                          // alterar para usuario logado
+          console.log("alo")                                             // alterar para usuario logado
   } else {
                                                          // alterar para usuario deslogado
   }
