@@ -1,6 +1,6 @@
 "use strict";
 //Variaveis
-const loginClick = document.querySelector("#submit-btn") 
+const loginClick = document.querySelector("#submit-btn") //adicionar variaveis do css
 //Sistema de contas
 //Conta Admin
 const user1 = {
@@ -20,9 +20,11 @@ loginClick.addEventListener("click", (login)=>{
   listaDeUsuario.forEach(usuario => {
     if (usuario.emailUser === emailInput && usuario.senhaUser === senhaInput){
       console.log("deu bom") 
+                                              //Link para pagina de volta
       localStorage.setItem("logged_in", true);//alterar para interação no site
+      localStorage.setItem("usuarioLogado", usuario)
     }else{
-      console.log("deu ruim") //alterar para interação no site
+      console.log("deu ruim") //adicionar menssagem de erro, tratamento de bloco email  e senha
     }
   });
 })
@@ -41,9 +43,9 @@ cadastroClick.addEventListener("click", (cadastro)=>{
 //Verificação se o usuario esta logado
 window.addEventListener("load", (logged)=>{
   if (localStorage.getItem("logged_in")) {
-                                                        // alterar para usuario logado
+                                                          // alterar para usuario logado
   } else {
-                                                         // Ualterar para usuario deslogado
+                                                         // alterar para usuario deslogado
   }
 })
 
