@@ -1,16 +1,26 @@
 "use strict";
 //Variaveis
-const loginClick = document.querySelector("#submit-btn") //adicionar variaveis do css
+const loginClick = document.querySelector("#submit-btn")
+const logUsuario = document.querySelector("#Login")
 //Sistema de contas
 //Conta Admin
 const user1 = {
     name: "GaloAdmin",
     emailUser:"contatogalofiap@gmail.com",
     senhaUser:"12345",
+    Região:"Centro",
+}
+const user2 = {
+  name: "GaloAdmin",
+  emailUser:"contatugalofiap@gmail.com",
+  senhaUser:"12345",
+  Região:"Centro",
 }
 let userList = [];
 userList.push(user1);
-//Local storage para userList
+userList.push(user2);
+//Local storage para usuario
+localStorage.setItem("userLog", JSON.stringify("0"))
 localStorage.setItem("usersList", JSON.stringify(userList));
 //Login
 loginClick.addEventListener("click", (login)=>{
@@ -18,51 +28,29 @@ loginClick.addEventListener("click", (login)=>{
   let listaDeUsuario = JSON.parse(localStorage.getItem("usersList"));
   let emailInput = document.querySelector("#email").value;
   let senhaInput = document.querySelector("#senha").value;
-  listaDeUsuario.forEach(usuario => {
-    if (usuario.emailUser === emailInput && usuario.senhaUser === senhaInput){
-      console.log("deu bom") 
-                                              //Link para pagina de volta
-      localStorage.setItem("logged_in", true);//alterar para interação no site
-      localStorage.setItem("usuarioLogado", usuario)
-    }else{
-      localStorage.setItem("logged_in", false);
-      var loggeda = localStorage.getItem("logged_in");
-      console.log(loggeda);
-      console.log("deu ruim"); //adicionar menssagem de erro, tratamento de bloco email  e senha
-    }
+  const acharUsuario = listaDeUsuario.find(usuario => {
+    return usuario.emailUser === emailInput && usuario.senhaUser === senhaInput;
   });
-})
-//Cadastro
-cadastroClick.addEventListener("click", (cadastro)=>{
-  let emailInput = document.querySelector("#email").value;
-  let senhaInput = document.querySelector("#senha").value;
-  if(emailInput !== '' && senhaInput !== ''){ //alterar para melhor tratamento e adicionar nome
-    const newUser = {
-      emailUser: emailInput,
-      senhaUser: senhaInput    //alterar para melhor tratamento
-    }
-    userList.push(newUser);
+  if(acharUsuario){
+    localStorage.setItem("userLog", "1");
+    //localStorage.setItem("usuarioLogado", acharUsuario)
+    //window.location.href = "./index.html";
+    console.log("Usuario Validado!")
+  }else{
+    console.log("Usuario Invalido digite novamente")
   }
 })
 //Verificação se o usuario esta logado
-window.addEventListener("load", (logged)=>{
-  if (localStorage.getItem("logged_in")) {
-          console.log("alo")                                             // alterar para usuario logado
+window.addEventListener("load", ()=>{
+  console.log("Evento de carregamento acionado");
+  let userLog = JSON.parse(localStorage.getItem("userLog"));
+  console.log(userLog)
+  if (userLog === "1") {
+          console.log("alo")  // alterar para usuario logado
   } else {
-                                                         // alterar para usuario deslogado
+    console.log("whats wrong?")// alterar para usuario deslogado
   }
 })
-
-
-
-
-
-
-
-
-
-
-
 
 // //sistema de formulario e validaçao de conta
 // var cidades = document.getElementById("cidades"); 
