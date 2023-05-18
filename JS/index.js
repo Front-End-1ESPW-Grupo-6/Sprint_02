@@ -1,51 +1,9 @@
-"use strict";
-//Variaveis
-const loginClick = document.querySelector("#submit-btn")
-const logUsuario = document.querySelector("#Login")
-//Sistema de contas
-//Conta Admin
-const user1 = {
-    name: "GaloAdmin",
-    emailUser:"contatogalofiap@gmail.com",
-    senhaUser:"12345",
-    Região:"Centro",
-}
-const user2 = {
-  name: "GaloAdmin",
-  emailUser:"contatugalofiap@gmail.com",
-  senhaUser:"12345",
-  Região:"Centro",
-}
-let userList = [];
-userList.push(user1);
-userList.push(user2);
-//Local storage para usuario
-localStorage.setItem("userLog", JSON.stringify("0"))
-localStorage.setItem("usersList", JSON.stringify(userList));
-//Login
-loginClick.addEventListener("click", (login)=>{
-  login.preventDefault()
-  let listaDeUsuario = JSON.parse(localStorage.getItem("usersList"));
-  let emailInput = document.querySelector("#email").value;
-  let senhaInput = document.querySelector("#senha").value;
-  const acharUsuario = listaDeUsuario.find(usuario => {
-    return usuario.emailUser === emailInput && usuario.senhaUser === senhaInput;
-  });
-  if(acharUsuario){
-    localStorage.setItem("userLog", "1");
-    //localStorage.setItem("usuarioLogado", acharUsuario)
-    //window.location.href = "./index.html";
-    console.log("Usuario Validado!")
-  }else{
-    console.log("Usuario Invalido digite novamente")
-  }
-})
 //Verificação se o usuario esta logado
 window.addEventListener("load", ()=>{
   console.log("Evento de carregamento acionado");
   let userLog = JSON.parse(localStorage.getItem("userLog"));
   console.log(userLog)
-  if (userLog === "1") {
+  if (userLog === 1) {
           console.log("alo")  // alterar para usuario logado
   } else {
     console.log("whats wrong?")// alterar para usuario deslogado
