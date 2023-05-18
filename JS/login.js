@@ -1,5 +1,6 @@
 //Variaveis
 const loginClick = document.querySelector("#submit-btn")
+//const cadastroClick = document.querySelector("#botao")//alterar mais tarde
 //Sistema de contas
 const user1 = {  //admin
     name: "GaloAdmin",
@@ -31,17 +32,22 @@ loginClick.addEventListener("click", (login)=>{
   }
 })
 //Cadastro
-cadastroClick.addEventListener("click", (cadastro)=>{
-    let emailInput = document.querySelector("#email").value;
-    let senhaInput = document.querySelector("#senha").value;
-    if(emailInput !== '' && senhaInput !== ''){ //alterar para melhor tratamento e adicionar nome
-      const newUser = {
-        emailUser: emailInput,
-        senhaUser: senhaInput    //alterar para melhor tratamento
-      }
-      userList.push(newUser);
-    }
-  })
+// cadastroClick.addEventListener("click", (cadastro)=>{
+//     cadastro.preventDefault()
+//     let emailInput = document.querySelector("#email").value;
+//     let senhaInput = document.querySelector("#senha").value;
+//     if(emailInput.value.length < 5){
+//     }else{
+//       if(emailInput.value)
+//     }
+//     if(emailInput !== '' && senhaInput !== ''){ //alterar para melhor tratamento e adicionar nome
+//       const newUser = {
+//         emailUser: emailInput,
+//         senhaUser: senhaInput    //alterar para melhor tratamento
+//       }
+//       userList.push(newUser);
+//     }
+//   })
   
   
   

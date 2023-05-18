@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/login.css">
     <script src="./JS/login.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
     <title>Galo Weather</title>
@@ -16,7 +16,7 @@
 <body>
         <!-- Inicio Login -->
     <div class="login-container">
-        <p class="login-title">Login</p>
+        <img src="./imgs/galo comercial color.png" class="login-img" alt="Galo Weather Logo">
         <div class="login-content" id="login">
 
             <div id="login-card">
@@ -25,20 +25,25 @@
                         <h2>LOGIN</h2>
                         <div class="underline-title"></div>
                     </div>
-                    <form method="post" class="form" onsubmit="validacao(event)">
-                        <label for="email" style="padding-top:13px">
+                    <form method="post" class="form" >
+                        <label for="email">
                             &nbsp;Email
                         </label>
-                        <input id="email" class="form-content" type="email" name="email" autocomplete="on" required />
+                        <input id="email" class="form-content" type="text" name="email" autocomplete="on" required />
                         <div class="form-border"></div>
-                        <label for="senha" style="padding-top:22px">&nbsp;Password</label>
+                        <label for="senha">&nbsp;Password</label>
                         <input id="senha" class="form-content" type="password" name="senha" required />
                         <div class="form-border"></div>
                         <button type="submit" class="submitButton" id="submit-btn">
                             Fazer login
                         </button>
+                        <div id="sign-up" class="sign-up">
+                            <span>Nao possui uma conta?</span>
+                            <span>Cadastre-se</span>
+                        </div>
+                        
                     </form>
-
+<!-- 
                     <form onsubmit="galoWeather(event)" class="form">
                         <label for="cidades">
                             Cidade
@@ -71,7 +76,7 @@
                             <p id="resultado">
                                 Menssagem de chuva forte e alagamento
                             </p>
-                        </div>
+                        </div> -->
                 </div>
             </div>
 
@@ -80,6 +85,7 @@
     <!-- Fim login -->
 
     <!-- Inicio registro -->
+    <!-- 
     <div class="Register-container">
         <p class="login-title">Registre-se</p>
         <div class="login-content" id="login">
@@ -120,6 +126,7 @@
 
         </div>
     </div>
+    -->
     <!-- Fim registro -->
 </body>
 </html>
