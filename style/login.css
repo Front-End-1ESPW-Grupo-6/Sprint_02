@@ -10,7 +10,15 @@ body{
     scroll-behavior: smooth;
     font-family: "Montserrat", sans-serif;
 }
+
 /* base */
+
+.logoIMG-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .login{
   display: flex;
   flex-direction: column;
@@ -26,7 +34,7 @@ body{
   background: #fbfbfb;
   border-radius: 12px;
   box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
-  height: 60vh;
+  height: 63vh;
   width: 40vh;
   z-index: -1; /* Definição de camada */
 }
@@ -115,16 +123,18 @@ body{
 
 /* Inicio cadastro */
 .cadastro-container {
+  position: fixed;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 1em 5%;
+  padding: 2em 5%;
   background: #fbfbfb;
   border-radius: 12px;
   box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
-  height: 80vh;
+  height: 60vh;
+  max-height: 60vh;
   width: 40vh;
-  z-index: 2; /* Definição de camada */
+  z-index: -2; /* Definição de camada */
 }
 .cadastro-img {
   width: 50vh;
