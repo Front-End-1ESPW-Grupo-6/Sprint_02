@@ -10,106 +10,202 @@ body{
     scroll-behavior: smooth;
     font-family: "Montserrat", sans-serif;
 }
-
+/* base */
+.login{
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
 .login-container {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   padding: 1em 5%;
-}
-  
-.login-img {
-  width: 39vh;
-  padding: 2em 0;
-}
-
-label {
-  font-family: "Raleway", sans-serif;
-  font-size: 1.3em;
-  padding-top: 1em;
-}
-
-#login-card {
   background: #fbfbfb;
   border-radius: 12px;
   box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
-  height: auto;
-  width: 41vh;
+  height: 60vh;
+  width: 40vh;
+  z-index: -1; /* Definição de camada */
 }
-
-#login-card-content {
-  padding: 2em 2em;
+.login-img {
+  width: 50vh;
+  padding: 3.5em 0;
 }
-
+.login-container label {
+  font-size: 1.1em;
+  padding-top: 1em;
+  width: 50px;
+  color: #333;
+}
+/* Titulo */
 #login-card-title {
-  padding: 2em 0;
+  padding: 0 0;
+  font-size: 0.9em;
   text-align: center;
 }
-
-  #signup {
-    color: #0f62fe;
-    font-size: 10pt;
-    margin-top: 16px;
-    text-align: center;
-  }
-
-  #submit-btn {
-    background: #0f62fe;
-    border: none;
-    border-radius: 21px;
-    box-shadow: 0px 1px 8px #ffffff;
-    cursor: pointer;
-    color: white;
-
-    height: 42.3px;
-    margin: 0 auto;
-    margin-top: 50px;
-    transition: 0.25s;
-    width: 153px;
-  }
-
-  #submit-btn:hover {
-    box-shadow: 0px 1px 18px #afafaf;
-  }
-
-.form {
+.login-card-title {
+  background: -webkit-linear-gradient(right, #ffffff, #0f62fe);
+  height: 2px;
+  margin: 0 auto 0 auto;
+  width: 4.7em;
+} 
+/* Fim titulo */
+/* Começo botão */
+#login-submit-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #0f62fe;
+  border: none;
+  border-radius: 21px;
+  box-shadow: 0px 1px 8px #ffffff;
+  cursor: pointer;
+  color: white;
+  margin: 2em 25%;
+  height: 42.3px;
+  transition: 0.25s;
+  width: 153px;
+}
+#login-submit-btn:hover {
+  box-shadow: 0px 1px 18px #afafaf;
+}
+/* Fim botão */
+/* Formulario */
+.login-form {
   align-items: left;
   display: flex;
   flex-direction: column;
 }
-
-
-  .form-border {
-    background: -webkit-linear-gradient(right, #ffffff, #0f62fe);
-    height: 1px;
-    width: 100%;
-  }
-
-.form-content {
+.login-form-border {
+  background: -webkit-linear-gradient(right, #ffffff, #0f62fe);
+  height: 1px;
+  width: 100%;
+}
+.login-form-content {
   background: #fbfbfb;
   padding-top: 10px;
   border: none;
   outline: none;
   padding-top: 0.5em;
   padding-left: 0.3em;
-  font-family: "Montserrat", sans-serif;
-  color: black;
   font-size: 1em;
 }
+/* fim formulario */
 .sign-up {
-  padding: 2em 0;
+  padding: 1.5em 0em;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
+.register{
+  color: #0f62fe;
+  font-weight: 800;
+}
+.login-underline-title {
+  background: -webkit-linear-gradient(right, #ffffff, #0f62fe);
+  height: 2px;
+  margin: 0 auto 0 auto;
+  width: 69px;
+} 
 
-  
-  .underline-title {
-    background: -webkit-linear-gradient(right, #ffffff, #0f62fe);
-    height: 2px;
-    margin: 0em auto 0 auto;
-    width: 89px;
-  } 
+/* Inicio cadastro */
+.cadastro-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1em 5%;
+  background: #fbfbfb;
+  border-radius: 12px;
+  box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
+  height: 80vh;
+  width: 40vh;
+  z-index: 2; /* Definição de camada */
+}
+.cadastro-img {
+  width: 50vh;
+  padding: 3.5em 0;
+}
+.cadastro-container label {
+  font-size: 1.1em;
+  padding-top: 1em;
+  width: auto;
+  color: #333;
+}
+/* Titulo */
+#cadastro-card-title {
+  padding: 0 0;
+  font-size: 0.9em;
+  text-align: center;
+}
+.cadastro-card-title {
+  background: -webkit-linear-gradient(right, #ffffff, #0f62fe);
+  height: 2px;
+  margin: 0 auto 0 auto;
+  width: 4.7em;
+} 
+/* Fim titulo */
+/* Começo botão */
+#cadastro-submit-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #0f62fe;
+  border: none;
+  border-radius: 21px;
+  box-shadow: 0px 1px 8px #ffffff;
+  cursor: pointer;
+  color: white;
+  margin: 2em 25%;
+  height: 42.3px;
+  transition: 0.25s;
+  width: 153px;
+}
+#cadastro-submit-btn:hover {
+  box-shadow: 0px 1px 18px #afafaf;
+}
+/* Fim botão */
+/* Formulario */
+.cadastro-form {
+  align-items: left;
+  display: flex;
+  flex-direction: column;
+}
+.cadastro-form-border {
+  background: -webkit-linear-gradient(right, #ffffff, #0f62fe);
+  height: 1px;
+  width: 100%;
+}
+.cadastro-form-content {
+  background: #fbfbfb;
+  padding-top: 10px;
+  border: none;
+  outline: none;
+  padding-top: 0.5em;
+  padding-left: 0.3em;
+  font-size: 1em;
+}
+/* fim formulario */
+.sign-up {
+  padding: 1.5em 0em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.register{
+  color: #0f62fe;
+  font-weight: 800;
+}
+.cadastro-underline-title {
+  background: -webkit-linear-gradient(right, #ffffff, #0f62fe);
+  height: 2px;
+  margin: 0 auto 0 auto;
+  width: 69px;
+} 
+/* Fim cadastro */

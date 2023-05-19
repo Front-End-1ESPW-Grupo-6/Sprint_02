@@ -14,119 +14,80 @@
 
 </head>
 <body>
-        <!-- Inicio Login -->
-    <div class="login-container">
+    <main class="login">
+        <div class="teste"></div>
+        <!-- IMAGEM PRINCIPAL -->
         <img src="./imgs/galo comercial color.png" class="login-img" alt="Galo Weather Logo">
-        <div class="login-content" id="login">
-
-            <div id="login-card">
-                <div id="login-card-content">
-                    <div id="login-card-title">
-                        <h2>LOGIN</h2>
-                        <div class="underline-title"></div>
-                    </div>
-                    <form method="post" class="form" >
-                        <label for="email">
-                            &nbsp;Email
-                        </label>
-                        <input id="email" class="form-content" type="text" name="email" autocomplete="on" required />
-                        <div class="form-border"></div>
-                        <label for="senha">&nbsp;Password</label>
-                        <input id="senha" class="form-content" type="password" name="senha" required />
-                        <div class="form-border"></div>
-                        <button type="submit" class="submitButton" id="submit-btn">
-                            Fazer login
-                        </button>
-                        <div id="sign-up" class="sign-up">
-                            <span>Nao possui uma conta?</span>
-                            <span>Cadastre-se</span>
-                        </div>
-                        
-                    </form>
-<!-- 
-                    <form onsubmit="galoWeather(event)" class="form">
-                        <label for="cidades">
-                            Cidade
-                        </label>
-        
-                        <select id="cidades" name="cidades" onchange="selectCidades()" disabled>
-                        <option value="fill">--Cidade--</option>  
-                        <option value="op1">Mocca</option>
-                        <option value="op2">Vila Prudente</option>
-                        <option value="op3">Tatuapé</option>
-                        <option value="op4">Belenzinho</option>
-                        </select>
-        
-                        <div>
-                            <p id="capacidade"></p>
-                        </div>
-        
-                        <br/>
-        
-                        <label for="precipitacao">
-                            Precipitação:
-                        </label>
-        
-                        <input type="text" id="precipitacao" name="precipitacao" disabled>
-                        <button type="submit">Teste</button>
-        
-                        <br/>
-        
-                        <div>
-                            <p id="resultado">
-                                Menssagem de chuva forte e alagamento
-                            </p>
-                        </div> -->
-                </div>
+        <!-- FIM IMAGEM -->
+        <!-- INICIO LOGIN -->
+        <!--
+        <div class="login-container">
+            <div id="login-card-title">
+                <h2>LOGIN</h2>
+                <div class="login-underline-title"></div>
             </div>
-
-        </div>
-    </div>
-    <!-- Fim login -->
-
-    <!-- Inicio registro -->
-    <!-- 
-    <div class="Register-container">
-        <p class="login-title">Registre-se</p>
-        <div class="login-content" id="login">
-
-            <div id="login-card">
-                <div id="login-card-content">
-                    <div id="login-card-title">
-                        <h2>Registre-se</h2>
-                        <div class="underline-title"></div>
+            <form method="post" class="login-form" >
+                <label for="email">
+                    &nbsp;Email
+                </label>
+                <input id="email" class="login-form-content" type="email" name="emailc" autocomplete="on" required />
+                <div class="login-form-border"></div>
+                <label for="senha">&nbsp;Password</label>
+                <input id="senha" class="login-form-content" type="password" name="senha" required />
+                <div class="login-form-border"></div>
+            </form>
+                <button type="submit" class="submitButton" id="login-submit-btn">
+                    Fazer login
+                </button>
+                <div id="sign-up" class="sign-up">
+                    <span>Nao possui uma conta?</span>
+                    <div class="register">
+                        <span>Cadastre-se</span>
                     </div>
-                    <form method="post" class="form" onsubmit="validacao(event)">
-                        <label for="email" style="padding-top:20px">
-                            &nbsp;Email
-                        </label>
-                        <input id="email" class="form-content" type="email" name="email" autocomplete="on" required />
-                        <div class="form-border"></div>
-                        <label for="senha" style="padding-top:22px">
-                            &nbsp;Senha
-                        </label>
-                        <input id="senha" class="form-content" type="password" name="senha" required />
-                        <div class="form-border"></div>
-                        <label for="senha" style="padding-top:22px">
-                            &nbsp;Confirme a senha
-                        </label>
-                        <input id="senha" class="form-content" type="password" name="senha" required />
-                        <div class="form-border"></div>
-                        <label for="senha" style="padding-top:22px">
-                            &nbsp;Região
-                        </label>
-                        <input id="senha" class="form-content" type="password" name="senha" required />
-                        <div class="form-border"></div>
-                        <button type="submit" class="submitButton" id="submit-btn">
-                            Registrar
-                        </button>
-                    </form>
                 </div>
+            </div> -->
+        <!-- FIM LOGIN -->
+        <!-- INICIO CADASTRO -->
+        <div class="cadastro-container">
+            <div id="cadastro-card-title">
+                <h2>Cadastro</h2>
+                <div class="cadastro-underline-title"></div>
             </div>
-
+            <form method="post" class="cadastro-form" >
+                <label for="emailC">
+                    &nbsp;Email
+                </label>
+                <input id="emailC" class="cadastro-form-content" type="text" name="emailC" autocomplete="on" required />
+                <div class="cadastro-form-border"></div>
+                <label for="senhaC">
+                    &nbsp;Senha
+                </label>
+                <input id="senhaC" class="cadastro-form-content" type="text" name="senhaC" required />
+                <div class="cadastro-form-border"></div>
+                <label for="emailC">
+                    &nbsp;Confirmar senha
+                </label>
+                <input id="emailC" class="cadastro-form-content" type="text" name="emailC" autocomplete="on" required />
+                <div class="cadastro-form-border"></div>
+                <label for="emailC">
+                    &nbsp;Sua região
+                </label>
+                <input id="emailC" class="cadastro-form-content" type="text" name="emailC" autocomplete="on" required />
+                <div class="cadastro-form-border"></div>
+            </form>
+                <button type="submit" class="submit-button" id="cadastro-submit-btn">
+                    Fazer login
+                </button>
+                <!-- alterar caso usuario nao deseja cadastrar -->
+                <div id="sign-up" class="sign-up">
+                    <span>ja possui uma conta?</span>
+                    <div class="register">
+                        <span>entrar</span>
+                    </div>
+                </div>
+                <!-- alterar caso usuario nao deseja cadastrar -->
         </div>
-    </div>
-    -->
-    <!-- Fim registro -->
+        <!-- FIM CADASTRO -->
+    </main>
 </body>
 </html>

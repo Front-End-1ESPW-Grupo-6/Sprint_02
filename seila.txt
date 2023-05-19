@@ -1,0 +1,27 @@
+ <div class="cadastro-container">
+            <div id="cadastro-card-title">
+                <h2>Cadastro</h2>
+                <div class="cadastro-underline-title"></div>
+            </div>
+            <form method="post" class="form" >
+                <label for="emailC">
+                    &nbsp;Email
+                </label>
+                <input id="emailC" class="cadastro-form-content" type="text" name="emailC" autocomplete="on" required />
+                <div class="cadastro-form-border"></div>
+                <label for="senhaC">&nbsp;Password</label>
+                <input id="senhaC" class="cadastro-form-content" type="text" name="senhaC" required />
+                <div class="cadastro-form-border"></div>
+            </form>
+                <button type="submit" class="submit-button" id="cadastro-submit-btn">
+                    Fazer login
+                </button>
+                <!-- alterar caso usuario nao deseja cadastrar -->
+                <div id="sign-up" class="sign-up">
+                    <span>ja possui uma conta?</span>
+                    <div class="register">
+                        <span>entrar</span>
+                    </div>
+                </div>
+                <!-- alterar caso usuario nao deseja cadastrar -->
+        </div>

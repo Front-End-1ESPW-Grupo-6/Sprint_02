@@ -1,7 +1,9 @@
 //Variaveis
-const loginClick = document.querySelector("#submit-btn")
+const teste = document.querySelector('.teste')
+const loginClick = document.querySelector("#login-submit-btn")
 //const cadastroClick = document.querySelector("#botao")//alterar mais tarde
 //Sistema de contas
+
 const user1 = {  //admin
     name: "GaloAdmin",
     emailUser:"contatogalofiap@gmail.com",
@@ -24,7 +26,7 @@ loginClick.addEventListener("click", (login)=>{
   });
   if(acharUsuario){
     localStorage.setItem("userLog", "1");//define usuario logado
-    //localStorage.setItem("usuarioLogado", acharUsuario) //define qual usuario foi logado
+    //let logUser = [usuario]; //define qual usuario foi logado
     window.location.href = "./index.html";
     console.log("Usuario Validado!")
   }else{
@@ -40,12 +42,12 @@ loginClick.addEventListener("click", (login)=>{
 //     }else{
 //       if(emailInput.value)
 //     }
-//     if(emailInput !== '' && senhaInput !== ''){ //alterar para melhor tratamento e adicionar nome
-//       const newUser = {
-//         emailUser: emailInput,
-//         senhaUser: senhaInput    //alterar para melhor tratamento
-//       }
-//       userList.push(newUser);
+    //  if(emailInput !== '' && senhaInput !== ''){ //alterar para melhor tratamento e adicionar nome
+    //    const newUser = {
+    //     emailUser: emailInput,
+    //     senhaUser: senhaInput    //alterar para melhor tratamento
+    //    }
+    //   userList.push(newUser);
 //     }
 //   })
   
