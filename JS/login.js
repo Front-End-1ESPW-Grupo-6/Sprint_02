@@ -95,7 +95,17 @@ cadastroClick.addEventListener("click", (cadastro)=>{
     console.log('senhas nao coincidem')
     return;
   }
-  console.log('to funcionando')
+  console.log('to funcionando');
+  msgErrorC.innerHTML = 'Cadastro efetuado com sucesso!';
+  msgErrorC.setAttribute('style', 'visibility: visible; color: #46f548;');
+  let nameInputCLEAR = document.querySelector('#nameC')
+  let emailInputCLEAR = document.querySelector('#emailC')
+  let senhaInputCLEAR = document.querySelector('#senhaC')
+  let senhaConfirmInputCLEAR = document.querySelector('#senhaCC')
+  nameInputCLEAR.value = ""
+  emailInputCLEAR.value = ""
+  senhaInputCLEAR.value = ""
+  senhaConfirmInputCLEAR.value = ""
   const newUser ={
     name: nameInput,
     emailUser: emailInput,
@@ -107,5 +117,4 @@ cadastroClick.addEventListener("click", (cadastro)=>{
   console.log(newUser)
   userList.push(newUser)
   console.log(userList)
-
 })
