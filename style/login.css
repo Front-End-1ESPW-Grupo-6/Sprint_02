@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+}
+body{
+    background-color: #ffffff;
+    height: 100vh;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* base */
+
+.logoIMG-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login{
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+.login-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1em 5%;
+  background: #fbfbfb;
+  border-radius: 12px;
+  box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
+  height: 63.3vh;
+  width: 40vh;
+  z-index: 1;/* Definição de camada */
+}
+.login-img {
+  width: 50vh;
+  padding: 3.5em 0;
+}
+.login-container label {
+  font-size: 1.1em;
+  padding-top: 1em;
+  width: 50px;
+  color: #333;
+}
+/* Titulo */
+#login-card-title {
+  padding: 0 0;
+  font-size: 1.6em;
+  text-align: center;
+}
+.login-underline-title {
+  background: -webkit-linear-gradient(right, #ffffff, #0f62fe);
+  height: 2px;
+  margin: 0 auto 0 auto;
+  width: 4.9em;
+} 
+/* Fim titulo */
+/* Erro Login*/
+.errorMsg{
+  display: flex;
+  font-weight: bold;
+  color: red;
+  justify-content: center;
+  padding-top: 3em;
+  padding-bottom: 1em;
+  visibility: hidden;
+}
+/* Formulario */
+.login-form {
+  align-items: left;
+  display: flex;
+  flex-direction: column;
+}
+.login-form-border {
+  background: -webkit-linear-gradient(right, #ffffff, #0f62fe);
+  height: 1px;
+  width: 100%;
+}
+.login-form-content {
+  background: #fbfbfb;
+  padding-top: 10px;
+  border: none;
+  outline: none;
+  padding-top: 0.5em;
+  padding-left: 0.3em;
+  font-size: 1em;
+}
+/* fim formulario */
+/* Começo botão */
+#login-submit-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #0f62fe;
+  border: none;
+  border-radius: 21px;
+  box-shadow: 0px 1px 8px #ffffff;
+  cursor: pointer;
+  color: white;
+  margin: 2em auto;
+  height: 42.3px;
+  transition: 0.25s;
+  width: 153px;
+}
+#login-submit-btn:hover {
+  box-shadow: 0px 1px 18px #afafaf;
+}
+/* Fim botão */
+.sign-up {
+  padding: 1.5em 0em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#register{
+  color: #0f62fe;
+  font-weight: 800;
+  text-decoration: none;
+}
+/* Inicio cadastro */
+.cadastro-container {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2em 5%;
+  background: #fbfbfb;
+  border-radius: 12px;
+  box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
+  height: 60vh;
+  max-height: 60vh;
+  width: 40vh;
+  z-index: -2;/* Definição de camada */
+}
+.cadastro-img {
+  width: 50vh;
+  padding: 3.5em 0;
+}
+.cadastro-container label {
+  font-size: 1.1em;
+  padding-top: 1em;
+  width: auto;
+  color: #333;
+}
+/* Titulo */
+#cadastro-card-title {
+  padding: 0 0;
+  font-size: 1.6em;
+  text-align: center;
+}
+.cadastro-underline-title {
+  background: -webkit-linear-gradient(right, #ffffff, #0f62fe);
+  height: 2px;
+  margin: 0 auto 0 auto;
+  width: 6em;
+} 
+/* Fim titulo */
+/* Erro Login*/
+.errorMsgC{
+  display: flex;
+  font-weight: bold;
+  color: red;
+  justify-content: center;
+  padding-top: 3em;
+  padding-bottom: 1em;
+  visibility: hidden;
+}
+/* Formulario */
+.cadastro-form {
+  align-items: left;
+  display: flex;
+  flex-direction: column;
+}
+.cadastro-form-border {
+  background: -webkit-linear-gradient(right, #ffffff, #0f62fe);
+  height: 1px;
+  width: 100%;
+}
+.cadastro-form-content {
+  background: #fbfbfb;
+  padding-top: 10px;
+  border: none;
+  outline: none;
+  padding-top: 0.5em;
+  padding-left: 0.3em;
+  font-size: 1em;
+}
+/* fim formulario */
+.sign-up {
+  padding: 1.5em 0em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#sign-up{
+  color: #0f62fe;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+/* Fim cadastro */
+/* Começo botão */
+#cadastro-submit-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #0f62fe;
+  border: none;
+  border-radius: 21px;
+  box-shadow: 0px 1px 8px #ffffff;
+  cursor: pointer;
+  color: white;
+  margin: 2em auto;
+  height: 42.3px;
+  transition: 0.25s;
+  width: 153px;
+}
+#cadastro-submit-btn:hover {
+  box-shadow: 0px 1px 18px #afafaf;
+}
+/* Fim botão */
