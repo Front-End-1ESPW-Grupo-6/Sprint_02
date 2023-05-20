@@ -7,18 +7,23 @@ const cadastroClick = document.querySelector("#cadastro-submit-btn")
 const msgError = document.querySelector('.errorMsg')
 const msgErrorC = document.querySelector('.errorMsgC')
 //Sistema de contas
-const user1 = {  //admin
-    name: "GaloAdmin",
-    emailUser:"contatogalofiap@gmail.com",
-    senhaUser:"12345"
+var listaUser = JSON.parse(localStorage.getItem("usersList"))
+console.log(listaUser)
+if(listaUser == null){
+  console.log('Lista de usuarios nao encontrada')
+  const user1 = {  //admin
+      name: "GaloAdmin",
+      emailUser:"contatogalofiap@gmail.com",
+      senhaUser:"12345"
+  }
+  let userList = []
+  userList.push(user1)
+  localStorage.setItem("usersList", JSON.stringify(userList)) //define a um localStorage todos os usuarios existentes
+}else{
+  console.log('lista de usuarios encontrada')
 }
-
-let userList = []
-userList.push(user1)
-
 //Local storage para usuario
 localStorage.setItem("userLog", JSON.stringify("0")) //define usuario deslogado
-localStorage.setItem("usersList", JSON.stringify(userList)) //define a um localStorage todos os usuarios existentes
 
 //Login
 loginClick.addEventListener("click", (login)=>{
@@ -115,6 +120,4 @@ cadastroClick.addEventListener("click", (cadastro)=>{
   listaDeUsuarioCadastro.push(newUser);
   localStorage.setItem("usersList", JSON.stringify(listaDeUsuarioCadastro));
   console.log(newUser)
-  userList.push(newUser)
-  console.log(userList)
 })
