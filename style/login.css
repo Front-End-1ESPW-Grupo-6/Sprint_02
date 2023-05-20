@@ -12,13 +12,11 @@ body{
 }
 
 /* base */
-
 .logoIMG-container{
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 .login{
   display: flex;
   flex-direction: column;
