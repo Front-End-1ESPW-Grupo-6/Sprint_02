@@ -1,11 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
 body{
-background-color: #ffffff;
-}
-
-p{
-  margin-bottom: 0.5em;
+  display: flex;
+  background-color: #ffffff;
 }
 
 * {
@@ -16,7 +13,7 @@ p{
     font-family: "Montserrat", sans-serif;
   }
 body{
-  height: 800vh;  /*Define que a pagina tera 8 vezes a vizualização da tela*/
+  height: 790vh;  /*Define que a pagina tera 8 vezes a vizualização da tela*/
 }
 /* Inicio navbar */
 /* Inicio PopUp Login */
@@ -234,7 +231,6 @@ body{
   }
 
   .home-image {
-    width: 60%;
     padding: 2em;
   }
   .home-image img{
@@ -242,6 +238,7 @@ body{
   }
 
   .home-text p:first-child{
+    margin-bottom: 0.5em;
     font-size: 3em;
     font-weight: bold;
     color: #0f62fe;
@@ -253,6 +250,7 @@ body{
   }
   
   .home-text p {
+    margin-bottom: 0.5em;
     font-size: 1.1em;
   }
 
@@ -260,43 +258,49 @@ body{
     font-weight: bold;
   }
   /* Fim Home */
-
+  /* Inicio Programa */
+  .programa{
+    width: auto;
+    height: 100vh;
+  }
+  /* Fim Programa */
   /* Inicio Problema */
   .problema-container {
     width: auto;
     height: 100vh;
-    margin: 0 auto;
-    padding-top: 4.3em;
+    padding: 4em;
     background: linear-gradient(#ffffff, #e8e8e8 15%);
   }
   
   .problema-content {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    padding-left: 3em;
-    padding-top: 2em;
   }
   
   .problema-image img {
-    width: 110%;
+    width: 100%;
     height: auto;
-    border-radius: 2em;
+    border-radius: 5em;
   }
 
   .problema-text p:first-child{
+    margin-bottom: 0.5em;
     font-size: 3em;
     font-weight: bold;
+    text-align: end;
     color: #0f62fe;
   }
   
   .problema-text {
-    width: 60%;
-    padding-left: 20em;
-    padding-right: 1em;
+    width: 50%;
+    height: 100%;
+    padding: 2em 0;
   }
   
   .problema-text p {
-    font-size: 1.1em;
+    margin-bottom: 0.5em;
+    font-size: 1em;
     line-height: 1.5;
     text-align: end;
   }
@@ -307,7 +311,6 @@ body{
   .causas-container {
     width: auto;
     height: 100vh;
-    margin: 0 auto;
     background: linear-gradient(#e8e8e8, #ffffff 15%);
   }
   
@@ -315,7 +318,7 @@ body{
     font-size: 3em;
     text-align: center;
     color: #0f62fe;
-    padding-top: 2.5em;
+    padding: 1em 2em;
     font-weight: bold;
   }
   
@@ -323,9 +326,7 @@ body{
     position: static;
     display: flex;
     justify-content: space-between;
-    padding-top: 1em;
-    padding-left: 13em;
-    padding-right: 13em;
+    padding: 0 13em;
   }
   
   .causas-grid{
@@ -415,45 +416,47 @@ body{
   .impactos-container {
     width: auto;
     height: 100vh;
-    margin: 0 auto;
     background: linear-gradient(#ffffff, #e8e8e8 15%);
   }
   
   .impactos-content {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    padding-left: 3em;
-    padding-top: 10em;
+    padding: 4em;
   }
 
   .impactos-text p:first-child{
     font-size: 3em;
+    margin-bottom: 0.5em;
     font-weight: bold;
     color: #0f62fe;
   }
   
   .impactos-text {
     width: 75%;
-    padding-left: 1em;
-    padding-right: 1em;
+    padding: 0 1em;
   }
   
   .impactos-text p {
-    font-size: 1.1em;
+    margin-bottom: 0.5em;
+    font-size: 1em;
     text-align: start;
   }
 
+  .impactos-image {
+    padding: 2em;
+  }
   .impactos-image img {
-    border-radius: 2em;
-    padding-right: 1em;
+    border-radius: 20px;
   }
   /* Fim impactos */
-
   /* Inicio Solução */
   .solucao-container {
     width: auto;
     height: 100vh;
     margin: 0 auto;
+    padding: 2em 4em;
     background: linear-gradient(#e8e8e8, #ffffff 15%);
   }
   
@@ -461,17 +464,13 @@ body{
     font-size: 3em;
     text-align: end;
     color: #0f62fe;
-    padding-top: 2.5em;
+    padding-top: 1em;
     font-weight: bold;
-    padding-right: 1em;
   }
   
   .solucao-content{
-    position: relative;
     display: flex;
     justify-content: space-between;
-    padding-left: 3em;
-    padding-right: 3em;
   }
   
   .solucao-grid{
@@ -559,18 +558,18 @@ body{
   .solucao-text{
     text-align: end;
     align-items: flex-end;
-    padding-left: 0em;
-    padding-right: 0em;
     margin-top: 1em;
     width: 50%;
   }
 
   .solucao-text p{
+    margin-bottom: 0.5em;
     font-size: 1.1em;
     line-height: 1.5;
   }
 
   .solucao-text p:nth-child(1){
+    margin-bottom: 0.5em;
     color: #0f62fe;
     font-weight: bold;
   }
@@ -581,7 +580,7 @@ body{
   /* Inico Quem somos */
   .quem-somos-container {
     width: auto;
-    height: 100vh;
+    height: 90vh;
     margin: 0 auto;
     background-color: #f3f3f3;
     padding-top: 0em;
@@ -590,9 +589,9 @@ body{
 
   .quem-somos-content {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    padding-left: 3em;
-    padding-top: 7em;
+    padding: 2em;
   }
   
   .quem-somos-image img {
@@ -623,9 +622,8 @@ body{
   
   .equipe-container {
     width: auto;
-    height: 55vh;
+    height: 89vh;
     margin: 0 auto;
-    padding-top: 0.7em;
     background: linear-gradient(#e8e8e8, #ffffff 15%);
   }
   
@@ -633,18 +631,17 @@ body{
     font-size: 3em;
     text-align: center;
     color: #0f62fe;
-    padding-top: 2.5em;
     font-weight: bold;
+    padding-top: 2em;
   }
 
   .equipe-section {
     display: flex;
-    min-height: 100%;
+    min-height: 75%;
     align-items: center;
     justify-content: center;
-    padding-top: -10em;
   }
-
+  
   .equipe-card-container {
     display: flex;
     gap: 1.875em;
@@ -718,119 +715,11 @@ body{
   }
 
   /* Fim Equipe */
-
-  /* Inicio Login */
-
-  .login-container {
-    width: auto;
-    height: 100vh;
-    margin: 0 auto;
-  }
-  
-  .login-title {
-    font-size: 3em;
-    text-align: center;
-    color: #0f62fe;
-    font-weight: bold;
-    padding-top: 5em;
-  }
-
-  label {
-    font-family: "Raleway", sans-serif;
-    font-size: 11pt;
-  }
-
-  #forgot-pass {
-    color: #0f62fe;
-    font-family: "Raleway", sans-serif;
-    font-size: 10pt;
-    margin-top: 0.1875em;
-    text-align: right;
-  }
-
-  #login-card {
-    background: #fbfbfb;
-    border-radius: 0.5em;
-    box-shadow: 0.0625em 0.125em 0.5em rgba(0, 0, 0, 0.65);
-    height: 33em;
-    margin: 2rem auto 8.1rem auto;
-    width: 25em;
-  }
-
-  #login-card-content {
-    padding: 0.75em 2.75em;
-  }
-
-  #login-card-title {
-    padding-bottom: 1.4375em;
-    padding-top: 0.8125em;
-    text-align: center;
-  }
-
-  #signup {
-    color: #0f62fe;
-    font-size: 10pt;
-    margin-top: 1em;
-    text-align: center;
-  }
-
-  #submit-btn {
-    background: #0f62fe;
-    border: none;
-    border-radius: 1.3125em;
-    box-shadow: 0em 0.0625 0,5em #ffffff;
-    cursor: pointer;
-    color: white;
-
-    height: 2.64375em;
-    margin: 0 auto;
-    margin-top: 3.125em;
-    transition: 0.25s;
-    width: 9.5625em;
-  }
-
-  #submit-btn:hover {
-    box-shadow: 0em 0.0625em 1.125em #afafaf;
-  }
-
-  .form {
-    align-items: left;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .form-border {
-    background: -webkit-linear-gradient(right, #ffffff, #0f62fe);
-    height: 0.0625em;
-    width: 100%;
-  }
-
-  .form-content {
-    background: #fbfbfb;
-    border: none;
-    outline: none;
-    padding-top: 0.875em;
-  }
-  
-  .underline-title {
-    background: -webkit-linear-gradient(right, #ffffff, #0f62fe);
-    height: 0.125em;
-    margin: 0em auto 0 auto;
-    width: 5.5625em;
-  }
-
-  /* Fim Login */
-
-  /* Inicio registro */
-
-  
-  /* Fim registro */
-
   /* Inicio rodapé */
 
   .rodape-container {
     width: auto;
-    height: 12vh;
+    height: 11vh;
     margin: 0 auto;
     background-color: #0c0c0c;
   }
