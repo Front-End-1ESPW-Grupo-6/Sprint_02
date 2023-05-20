@@ -1,10 +1,26 @@
+//Variaveis
+const loginBar = document.querySelector('.loginBar')
+const loginNav = document.querySelector('#Login')
 //Verificação se o usuario esta logado
 window.addEventListener("load", ()=>{
   console.log("Evento de carregamento acionado");
   let userLog = JSON.parse(localStorage.getItem("userLog"));
   console.log(userLog)
   if (userLog === 1) {
-          console.log("alo")  // alterar para usuario logado
+    loginNav.href = 'javascript:void(0);'
+    console.log("alo");
+    let userLogado = JSON.parse(localStorage.getItem('logedUser'));
+    console.log(userLogado);
+    console.log(userLogado[0].name);
+    loginNav.innerHTML = userLogado[0].name
+    loginNav.addEventListener('click', () => {
+      loginBar.classList.toggle('open');
+    });
+    loginBar.addEventListener('click', ()=>{
+      localStorage.setItem("userLog", JSON.stringify("0"))
+      location.reload();
+      console.log('teste');
+    })
   } else {
     console.log("whats wrong?")// alterar para usuario deslogado
   }

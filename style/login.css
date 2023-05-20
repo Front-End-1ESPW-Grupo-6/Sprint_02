@@ -34,9 +34,9 @@ body{
   background: #fbfbfb;
   border-radius: 12px;
   box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
-  height: 63vh;
+  height: 63.3vh;
   width: 40vh;
-  z-index: -1; /* Definição de camada */
+  z-index: 1;/* Definição de camada */
 }
 .login-img {
   width: 50vh;
@@ -51,36 +51,26 @@ body{
 /* Titulo */
 #login-card-title {
   padding: 0 0;
-  font-size: 0.9em;
+  font-size: 1.6em;
   text-align: center;
 }
-.login-card-title {
+.login-underline-title {
   background: -webkit-linear-gradient(right, #ffffff, #0f62fe);
   height: 2px;
   margin: 0 auto 0 auto;
-  width: 4.7em;
+  width: 4.9em;
 } 
 /* Fim titulo */
-/* Começo botão */
-#login-submit-btn {
+/* Erro Login*/
+.errorMsg{
   display: flex;
+  font-weight: bold;
+  color: red;
   justify-content: center;
-  align-items: center;
-  background: #0f62fe;
-  border: none;
-  border-radius: 21px;
-  box-shadow: 0px 1px 8px #ffffff;
-  cursor: pointer;
-  color: white;
-  margin: 2em 25%;
-  height: 42.3px;
-  transition: 0.25s;
-  width: 153px;
+  padding-top: 3em;
+  padding-bottom: 1em;
+  visibility: hidden;
 }
-#login-submit-btn:hover {
-  box-shadow: 0px 1px 18px #afafaf;
-}
-/* Fim botão */
 /* Formulario */
 .login-form {
   align-items: left;
@@ -102,6 +92,26 @@ body{
   font-size: 1em;
 }
 /* fim formulario */
+/* Começo botão */
+#login-submit-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #0f62fe;
+  border: none;
+  border-radius: 21px;
+  box-shadow: 0px 1px 8px #ffffff;
+  cursor: pointer;
+  color: white;
+  margin: 2em auto;
+  height: 42.3px;
+  transition: 0.25s;
+  width: 153px;
+}
+#login-submit-btn:hover {
+  box-shadow: 0px 1px 18px #afafaf;
+}
+/* Fim botão */
 .sign-up {
   padding: 1.5em 0em;
   display: flex;
@@ -110,17 +120,11 @@ body{
   align-items: center;
   text-align: center;
 }
-.register{
+#register{
   color: #0f62fe;
   font-weight: 800;
+  text-decoration: none;
 }
-.login-underline-title {
-  background: -webkit-linear-gradient(right, #ffffff, #0f62fe);
-  height: 2px;
-  margin: 0 auto 0 auto;
-  width: 69px;
-} 
-
 /* Inicio cadastro */
 .cadastro-container {
   position: fixed;
@@ -134,7 +138,7 @@ body{
   height: 60vh;
   max-height: 60vh;
   width: 40vh;
-  z-index: -2; /* Definição de camada */
+  z-index: -2;/* Definição de camada */
 }
 .cadastro-img {
   width: 50vh;
@@ -149,36 +153,26 @@ body{
 /* Titulo */
 #cadastro-card-title {
   padding: 0 0;
-  font-size: 0.9em;
+  font-size: 1.6em;
   text-align: center;
 }
-.cadastro-card-title {
+.cadastro-underline-title {
   background: -webkit-linear-gradient(right, #ffffff, #0f62fe);
   height: 2px;
   margin: 0 auto 0 auto;
-  width: 4.7em;
+  width: 6em;
 } 
 /* Fim titulo */
-/* Começo botão */
-#cadastro-submit-btn {
+/* Erro Login*/
+.errorMsgC{
   display: flex;
+  font-weight: bold;
+  color: red;
   justify-content: center;
-  align-items: center;
-  background: #0f62fe;
-  border: none;
-  border-radius: 21px;
-  box-shadow: 0px 1px 8px #ffffff;
-  cursor: pointer;
-  color: white;
-  margin: 2em 25%;
-  height: 42.3px;
-  transition: 0.25s;
-  width: 153px;
+  padding-top: 3em;
+  padding-bottom: 1em;
+  visibility: hidden;
 }
-#cadastro-submit-btn:hover {
-  box-shadow: 0px 1px 18px #afafaf;
-}
-/* Fim botão */
 /* Formulario */
 .cadastro-form {
   align-items: left;
@@ -208,14 +202,30 @@ body{
   align-items: center;
   text-align: center;
 }
-.register{
+#sign-up{
   color: #0f62fe;
   font-weight: 800;
+  text-decoration: none;
 }
-.cadastro-underline-title {
-  background: -webkit-linear-gradient(right, #ffffff, #0f62fe);
-  height: 2px;
-  margin: 0 auto 0 auto;
-  width: 69px;
-} 
+
 /* Fim cadastro */
+/* Começo botão */
+#cadastro-submit-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #0f62fe;
+  border: none;
+  border-radius: 21px;
+  box-shadow: 0px 1px 8px #ffffff;
+  cursor: pointer;
+  color: white;
+  margin: 2em auto;
+  height: 42.3px;
+  transition: 0.25s;
+  width: 153px;
+}
+#cadastro-submit-btn:hover {
+  box-shadow: 0px 1px 18px #afafaf;
+}
+/* Fim botão */
