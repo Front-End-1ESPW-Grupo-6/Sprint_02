@@ -267,10 +267,115 @@ body {
 
 /* Fim Home */
 /* Inicio Programa */
-.programa {
-  width: auto;
-  height: 100vh;
-}
+ /* Inicio clima */
+  .clima-container {
+    width: auto;
+    height: 80vh;
+  }
+
+  .clima-content{
+    display: flex;
+    justify-content: space-between;
+    padding: 2em 7em;
+  }
+
+  .clima-title p{
+    font-size: 3em;
+    font-weight: bold;
+    color: #0f62fe;
+    text-align: center;
+  }
+
+  .tempo{
+    height: 40em;
+    padding: 2em;
+    width: 35%;
+    box-shadow: 0 1px 20px rgba(214, 214, 214, 0.8);
+    border-radius: 2em;
+  }
+
+  .tempo-card-title p{
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #0f62fe;
+    text-align: center;
+  }
+
+  .tempo-title{
+    display: flex;
+    font-size: 1.5em;
+    padding-top: 0.5em;
+    padding-left: 1em;
+  }
+
+  .tempo img{
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .temperatura{
+    display: flex;
+    justify-content: center;
+    padding: 1em 0 0 0;
+  }
+
+  .temperatura .temperatura-numero{
+    font-size: 4em;
+    font-weight: 800;
+  }
+
+  .temperatura .graus{
+    font-size: 1.5em;
+    font-weight: 800;
+  }
+
+  .descricao{
+    text-align: center;
+    font-weight: 800;
+    font-size: 1.5em;
+  }
+
+  .infos{
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+ }
+
+  .infos .umidade, .infos .velocidade{
+    display: flex;
+    align-items: center;
+  }
+
+  .infos .umidade{
+    justify-content: flex-start;
+  }
+
+  .infos .velocidade{
+      justify-content: flex-end;
+  }
+
+  .infos i{
+    font-size: 26px;
+    margin-right: 10px;
+    margin-top: 6px;
+  }
+
+  .infos p{
+    font-size: 1.1em;
+    font-weight: 800;
+  }
+
+
+  .programa{
+    min-height: 40em;
+    width: 60%;
+    box-shadow: 0 20px 20px rgba(214, 214, 214, 0.8);
+    border-radius: 2em;
+    padding: 2em;
+  }
+
+  /* Fim clima */
 
 /* Fim Programa */
 /* Inicio Problema */
@@ -732,7 +837,7 @@ body {
 
 .rodape-container {
   width: auto;
-  height: 11vh;
+  height: 13vh;
   margin: 0 auto;
   background-color: #0c0c0c;
 }
