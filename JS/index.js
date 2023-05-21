@@ -49,14 +49,16 @@ cidades2.addEventListener('change', ()=>{
     tempoImg2.src = "../imgs/clima-imgs/cloud.png"
     temperatura.innerHTML="20"
     statusT.innerHTML="Nublado" //alterar essas variaveis para o exemplo do programa
-    chuvaP.innerHTML= "999mm/h" //copiar colar e alterar para as opçoes abaixo
-    resultadoC.innerHTML="aaaaaaaa"
+    chuvaP.innerHTML= "1mm/h" //copiar colar e alterar para as opçoes abaixo
+    resultadoC.innerHTML="Não há risco de enchente, fique tranquilo"
   } else if(cidades2.value == 'op2'){
     capacidade.innerHTML= "Capacidade de chuva: 10mm/h"
     tempoImg1.src = "./imgs/clima-imgs/clear.png"
     tempoImg2.src = "./imgs/clima-imgs/clear.png"
     temperatura.innerHTML="29"
     statusT.innerHTML="Ensolarado"
+    chuvaP.innerHTML= "0mm/h" 
+    resultadoC.innerHTML="Não há risco de enchente, fique tranquilo"
   } else if(cidades2.value == 'op3'){
     capacidade.innerHTML= "Capacidade de chuva: 15mm/h"
     tempoImg1.src = "./imgs/clima-imgs/snow.png"
