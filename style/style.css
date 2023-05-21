@@ -14,6 +14,12 @@ body {
 }
 /* Inicio navbar */
 /* Inicio PopUp Login */
+.acesso_1{
+  color: #e8e8e8;
+  font-size: 2em;
+  font-weight: 800px;
+
+}
 .loginBar {
   position: absolute;
   padding: 15px;
