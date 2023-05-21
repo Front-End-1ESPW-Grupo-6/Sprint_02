@@ -302,7 +302,6 @@ body {
 
 .tempo-title {
   display: flex;
-  font-size: 1.5em;
   padding-top: 0.5em;
   padding-left: 1em;
 }
@@ -368,110 +367,90 @@ body {
 
 
 .programa {
+  display: flex;
+  justify-content: center;
   height: 40em;
   width: 60%;
   box-shadow: 0 1px 20px rgba(214, 214, 214, 0.8);
   border-radius: 2em;
   padding: 2em;
 }
-
-.widget {
-  background: #fff;
-  width: 100%;
-  border-radius: 8px;
-}
-
-.radioB {
-  display: none;
-}
-
-.content {
-  position: relative;
-  overflow: hidden;
-  height: 470px;
-}
-
-.content-inner {
-  position: absolute;
-  top: 0;
-  left: 0;
+.programa h2 {
   display: flex;
-  height: 470px;
-  width: calc(100% * 2);
-  transition: 0.3s;
+  justify-content: center;
 }
-
-.content-inner>div {
-  width: inherit;
+.programa-txt{
+  height: 100%;
+  width: 100%;
+}
+.formSim{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.cidadeSim{
+  display: flex;
+  justify-content: start;
+}
+.cidades{
+  padding-left: 10px;
+  font-size: 20px;
+  outline: none;
+  border: none;
+  appearance: none;
+}
+.cidades i{
+  width: 40px;
+}
+.imgSim{
+  width: 250px;
+  height: 250px;
   padding: 20px;
 }
-.simulacro{
+.infoSim{
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: black;
 }
-.formSimulacro{
-  display: flex;
-  flex-direction: column; 
-  align-items: center;
-  padding: 2em;
+#capacidade{
+  font-weight: bold;
+  font-size: 1.5em;
+  padding: 0.3em;
 }
-.cidadeSimulacro{
+.precipitacao{
   display: flex;
   justify-content: center;
-  flex-direction: row;
-  font-size: 2em;
-}
-.cidades{
-  font-size: 1em;
-  appearance: none;
-  border: none;
-  outline: none;
-}
-
-label {
   padding: 1em;
-  font-size: 1em;
-  width: auto;
-  opacity: 0.35;
+}
+
+#simButton {
+  background: #e9e9e9;
+  border-radius: 999px;
+  box-shadow: 0px 1px 18px #afafaf;
+  color: #c2c0c3;
   cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 8px 18px;
+  user-select: none;
+  width: fit-content;
+  border: 0;
 }
-.buttons {
-  position: relative;
-  display: flex;
-  border-bottom: 1px solid #575757;
-}
-
-.underline {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 112px;
-  height: 3px;
+#simButton:hover{
   background: #0f62fe;
-  transition: 0.2s;
+  border-radius: 999px;
+  box-shadow: 0 1.6875em 1.6875em rgba(214, 214, 214, 0.8);
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 8px 18px;
+  user-select: none;
+  width: fit-content;
+  border: 0;
 }
-
-.tabs input:nth-child(1):checked~.buttons .underline {
-  translate: 0 0;
-}
-
-.tabs input:nth-child(2):checked~.buttons .underline {
-  translate: 110px 0;
-}
-
-.tabs input:nth-child(1):checked~.buttons label:nth-child(1),
-.tabs input:nth-child(2):checked~.buttons label:nth-child(2){
-  opacity: 1;
-}
-
-.tabs input:nth-child(1):checked~.content>.content-inner {
-  translate: 0 0;
-}
-
-.tabs input:nth-child(2):checked~.content>.content-inner {
-  translate: calc(0px - 50%) 0;
+#resultado{
+  padding: 1em;
 }
 /* Fim clima */
 

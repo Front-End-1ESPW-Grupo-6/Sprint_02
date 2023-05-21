@@ -106,82 +106,31 @@
                         <div class="tempo-card-title">
                             <p>Programa</p>
                         </div>
-
-                        <div class="widget">
-                            <div class="tabs">
-                                <input class="radioB" type="radio" name="group" id="tab-1" checked>
-                                <input class="radioB" type="radio" name="group" id="tab-2">
-
-                                <div class="buttons">
-                                    <label for="tab-1" class="material-symbols-outlined">Programa</label>
-                                    <label for="tab-2" class="material-symbols-outlined">Descrição</label>
-                                    <div class="underline"></div>
-                                </div>
-
-                                <div class="content">
-                                    <div class="content-inner">
-                                        <div class="simulacro">
-                                            <h2>Simulação</h2>
-                                            <form class="formSimulacro" onsubmit="galoWeather(event)">
-                                                <div class="cidadeSimulacro">
-                                                    <i class="fa-solid fa-location-dot"></i>
-                                                    <select id="cidades2"class="cidades" name="cidades" onchange="selectCidades()">
-                                                        <option value="fill">Cidade</option>
-                                                        <option value="op1">Mocca</option>
-                                                        <option value="op2">Vila Prudente</option>
-                                                        <option value="op3">Tatuapé</option>
-                                                        <option value="op4">Belenzinho</option>
-                                                    </select>
-                                                </div>
-                                                <img src="./imgs/mapa-img/SP Mapa.png">
-                                                <div>
-                                                    <p id="capacidade">placeholder</p>
-                                                </div>
-                                                <div for="precipitacao">
-                                                    <p>Precipitação:</p>
-                                                </div>
-
-                                                <input type="text" id="precipitacao" name="precipitacao">
-                                                <button type="submit">Teste</button>
-                                                <div>
-                                                    <p id="resultado">Menssagem de chuva forte e alagamento</p>
-                                                </div>
-                                        </div>
-                                        <div>
-                                            <h2>Resumo do projeto</h2>
-                                            <p>
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lacinia
-                                                imperdiet bibendum. Ut viverra tempor nunc, id sodales risus sodales in.
-                                                Mauris ornare molestie efficitur. Fusce pharetra tellus augue, rutrum
-                                                efficitur magna luctus a. Cras consectetur urna diam, id porttitor nibh
-                                                molestie ultrices. Suspendisse varius sodales lacus. Donec tincidunt
-                                                nisi ac nisl vestibulum pharetra.
-
-                                                Sed semper vulputate aliquet. Sed a metus semper, malesuada lacus id,
-                                                pretium lectus. Vestibulum eget porttitor turpis, vel iaculis leo. Nulla
-                                                nec ultrices mi. Nunc rutrum, leo id feugiat congue, felis neque
-                                                imperdiet tellus, eu feugiat nisi libero ac augue. Quisque nec
-                                                sollicitudin nunc. Vestibulum at magna lectus. In aliquam libero nec
-                                                vehicula ultricies. Morbi non sollicitudin est. Donec tincidunt felis eu
-                                                tristique condimentum. Ut ut mi vestibulum, lobortis nisl vel, laoreet
-                                                lectus. Donec nec sapien pulvinar, fermentum ipsum congue, interdum
-                                                nunc. Pellentesque quis est vulputate, dapibus enim sit amet, malesuada
-                                                neque. Quisque id pharetra ipsum.
-
-                                                Etiam quam dolor, semper et feugiat vitae, bibendum quis eros. Donec
-                                                dapibus venenatis porta. Donec lectus metus, commodo eu lacinia ac,
-                                                bibendum vitae nisi. Curabitur pulvinar diam elit, quis semper magna
-                                                ornare porttitor. Integer viverra mauris a ipsum rhoncus accumsan.
-                                                Pellentesque eu mauris id orci varius luctus. Vivamus cursus mi a
-                                                vehicula pulvinar. Quisque odio eros, pharetra nec placerat eget,
-                                                vestibulum volutpat massa. Phasellus convallis lorem eros, id mollis
-                                                ante suscipit non.
-                                            </p>
-
-                                        </div>
+                        <div class="content">
+                            <div class="simulacao">
+                                <h2>Simulação</h2>
+                                <form class="formSim" onsubmit="galoWeather(event)">
+                                    <div class="cidadeSim">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        <select id="cidades2" class="cidades" name="cidades" onchange="selectCidades()">
+                                            <option value="fill">Cidade</option>
+                                            <option value="op1">Mocca</option>
+                                            <option value="op2">Vila Prudente</option>
+                                            <option value="op3">Tatuapé</option>
+                                            <option value="op4">Belenzinho</option>
+                                        </select>
                                     </div>
-                                </div>
-
+                                    <div class="infoSim">
+                                        <img class="imgSim" src="./imgs/clima-imgs/clear.png">
+                                        <p id="capacidade">placeholder</p>
+                                        <div class="precipitacao">
+                                            <p>Precipitação:</p>
+                                            <input type="text" id="precipitacao" name="precipitacao">
+                                        </div>
+                                        <button id="simButton" type="submit">Teste</button>
+                                        <p id="resultado">Menssagem de chuva forte e alagamento</p>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
