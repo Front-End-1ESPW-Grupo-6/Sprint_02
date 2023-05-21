@@ -70,21 +70,22 @@
                     </div>
                     <div class="tempo-title">
                         <i class="fa-solid fa-location-dot"></i>
-                        <select id="cidades1" class="cidades" name="cidades" onchange="selectCidades()">
-                            <option value="fill">Cidade</option>
-                            <option value="op1">Mocca</option>
-                            <option value="op2">Vila Prudente</option>
-                            <option value="op3">Tatuapé</option>
-                            <option value="op4">Belenzinho</option>
+                        <select id="cidades1" class="cidades" name="cidades1">
+                            <option value="op1">Itaim Bibi</option>
+                            <option value="op2">Mocca</option>
+                            <option value="op3">Vila Prudente</option>
+                            <option value="op4">Tatuapé</option>
+                            <option value="op5">Belenzinho</option>
                         </select>
                     </div>
-                    <img src="./imgs/clima-imgs/clear.png" alt="Clima-img">
+                    
+                    <img class="imgSim" id="imgSim1" src="./imgs/clima-imgs/cloud.png" alt="Clima-img">
                     <div class="temperatura">
-                        <p class="temperatura-numero">32</p>
+                        <p class="temperatura-numero" id="temperatura-numero">20</p>
                         <p class="graus">°C</p>
                     </div>
                     <div class="descricao">
-                        <p>Ensolarado</p>
+                        <p id="tempoTemp">Nublado</p>
                     </div>
                     <div class="infos">
                         <div class="umidade">
@@ -109,26 +110,24 @@
                         <div class="content">
                             <div class="simulacao">
                                 <h2>Simulação</h2>
-                                <form class="formSim" onsubmit="galoWeather(event)">
+                                <form class="formSim">
                                     <div class="cidadeSim">
                                         <i class="fa-solid fa-location-dot"></i>
-                                        <select id="cidades2" class="cidades" name="cidades" onchange="selectCidades()">
-                                            <option value="fill">Cidade</option>
-                                            <option value="op1">Mocca</option>
-                                            <option value="op2">Vila Prudente</option>
-                                            <option value="op3">Tatuapé</option>
-                                            <option value="op4">Belenzinho</option>
+                                        <select id="cidades2" class="cidades" name="cidades2">
+                                            <option value="op1">Itaim Bibi</option>
+                                            <option value="op2">Mocca</option>
+                                            <option value="op3">Vila Prudente</option>
+                                            <option value="op4">Tatuapé</option>
+                                            <option value="op5">Belenzinho</option>
                                         </select>
                                     </div>
                                     <div class="infoSim">
-                                        <img class="imgSim" src="./imgs/clima-imgs/clear.png">
-                                        <p id="capacidade">placeholder</p>
-                                        <div class="precipitacao">
-                                            <p>Precipitação:</p>
-                                            <input type="text" id="precipitacao" name="precipitacao">
+                                        <img class="imgSim" id="imgSim2" src="./imgs/clima-imgs/cloud.png">
+                                        <p id="capacidade">Capacidade de chuva: 5mm/h</p>
+                                        <div class="chuvaP">
+                                            <p>Chuva:</p><p id="chuvaP">222</p>
                                         </div>
-                                        <button id="simButton" type="submit">Teste</button>
-                                        <p id="resultado">Menssagem de chuva forte e alagamento</p>
+                                        <p id="resultadoChuva">Menssagem de chuva forte e alagamento</p>
                                     </div>
                                 </form>
                             </div>

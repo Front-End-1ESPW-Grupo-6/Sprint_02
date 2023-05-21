@@ -25,87 +25,55 @@ window.addEventListener("load", () => {
 })
 
 // //sistema galowather
-var select1 = document.querySelector('#cidades1');
-var select2 = document.querySelector('#cidades2');
-select1.addEventListener('change', () => {
-  select2.value = select1.value;
+let cidades1 = document.querySelector('#cidades1');
+let cidades2 = document.querySelector('#cidades2');
+cidades1.addEventListener('change', () => {
+  cidades2.value = cidades1.value;
 });
 
-select2.addEventListener('change', () => {
-  select1.value = select2.value;
+cidades2.addEventListener('change', () => {
+  cidades1.value = cidades2.value;
 });
-var cidades = document.getElementById("cidades1");
-var precipitacao = document.getElementById("precipitacao");
-
-function selectCidades() {
-  var c1 = document.getElementById("cidades1");
-  var capacidade = document.getElementById("capacidade");
-  var CS = c1.options[c1.selectedIndex].value;
-
-  if (CS == "op1") {
-    capacidade.innerHTML = "Capacidade: 10mm de chuva";
-  } else if (CS == "op2") {
-    capacidade.innerHTML = "Capacidade: 15mm";
-  } else if (CS == "op3") {
-    capacidade.innerHTML = "Capacidade: 20mm";
-  } else if (CS == "op4") {
-    capacidade.innerHTML = "Capacidade: 30mm";
-  } else {
-    capacidade.innerHTML = "Capacidade:";
-  }
-}
-
-
-function galoWeather(event) {
-  event.preventDefault();
-  var c1 = document.getElementById("cidades2");
-  var CS = c1.options[c1.selectedIndex].value;
-  var PS = document.getElementById("precipitacao").value;
-  var resultado = document.getElementById("resultado");
-
-  if (CS === "op1") {
-    if (PS > 10) {
-      resultado.innerHTML = "Vai alagar na Mocca, principalmente no centro e extremidades.";
-      console.log("Vai alagar na Mocca, principalmente no centro e extremidades.");
-    } else if (PS > 5 && PS <= 10) {
-      resultado.innerHTML = "Nao vai alagar na Mocca, mas algum lugares podem enfrentar transito";
-      console.log("Nao vai alagar na Mocca, mas algum lugares podem enfrentar transito");
-    } else {
-      resultado.innerHTML = "Não vai alagar na Mocca";
-      console.log("Não vai alagar na Mocca");
-    }
-  } else if (CS === "op2") {
-    if (PS > 15) {
-      resultado.innerHTML = "Vai alagar na Vila Prudente, areas residenciais podem ser prejudicadas.";
-      console.log("Vai alagar na Vila Prudente, areas residenciais podem ser prejudicadas.");
-    } else if (PS > 10 && PS <= 15) {
-      resultado.innerHTML = "Nao vai alagar na Vila Prudente, mas algumas casas podem ser prejudicadas com muita agua";
-      console.log("Nao vai alagar na Vila Prudente, mas algumas casas podem ser prejudicadas com muita agua");
-    } else {
-      resultado.innerHTML = "Não vai alagar na Vila Prudente";
-      console.log("Não vai alagar na Vila Prudente");
-    }
-  } else if (CS === "op3") {
-    if (PS > 20) {
-      resultado.innerHTML = "Vai alagar no Tatuapé, Avenidas principais ficaram obstruidas.";
-      console.log("Vai alagar no Tatuapé, Avenidas principais ficaram obstruidas.");
-    } else if (PS > 10 && PS <= 20) {
-      resultado.innerHTML = "Nao vai alagar no Tatuapé, mas algum lugares podem ter problemas com transito";
-      console.log("Nao vai alagar no Tatuapé, mas algum lugares podem ter problemas com transito");
-    } else {
-      resultado.innerHTML = "Não vai alagar no Tatuapé";
-      console.log("Não vai alagar no Tatuapé");
-    }
-  } else if (CS === "op4") {
-    if (PS > 30) {
-      resultado.innerHTML = "Vai alagar em Belenzinho, areas residenciais podem ser prejudicadas";
-      console.log("Vai alagar em Belenzinho, areas residenciais podem ser prejudicadas");
-    } else if (PS > 15 && PS <= 30) {
-      resultado.innerHTML = "Nao vai alagar em Belenzinho, mas algumas casas podem enfrentar perda de energia."
-      console.log("Nao vai alagar em Belenzinho, mas algumas casas podem enfrentar perda de energia.");
-    } else {
-      resultado.innerHTML = "Não vai alagar em Belenzinho";
-      console.log("Não vai alagar em Belenzinho");
-    }
-  }
-}
+let chuvaP = document.querySelector("#chuvaP");
+let capacidade = document.querySelector("#capacidade");
+let tempoImg1 = document.querySelector("#imgSim1")
+let tempoImg2 = document.querySelector("#imgSim2")
+let temperatura = document.querySelector('#temperatura-numero')
+let statusT = document.querySelector('#tempoTemp')
+let resultadoC = document.querySelector('#resultadoChuva')
+cidades2.addEventListener('change', ()=>{
+  console.log('cidade mudou')
+  if (cidades2.value == 'op1'){
+    capacidade.innerHTML= "Capacidade de chuva: 5mm/h"
+    tempoImg1.src = "./imgs/clima-imgs/cloud.png"
+    tempoImg2.src = "../imgs/clima-imgs/cloud.png"
+    temperatura.innerHTML="20"
+    statusT.innerHTML="Nublado" //alterar essas variaveis para o exemplo do programa
+    chuvaP.innerHTML= "999mm/h" //copiar colar e alterar para as opçoes abaixo
+    resultadoC.innerHTML="aaaaaaaa"
+  } else if(cidades2.value == 'op2'){
+    capacidade.innerHTML= "Capacidade de chuva: 10mm/h"
+    tempoImg1.src = "./imgs/clima-imgs/clear.png"
+    tempoImg2.src = "./imgs/clima-imgs/clear.png"
+    temperatura.innerHTML="29"
+    statusT.innerHTML="Ensolarado"
+  } else if(cidades2.value == 'op3'){
+    capacidade.innerHTML= "Capacidade de chuva: 15mm/h"
+    tempoImg1.src = "./imgs/clima-imgs/snow.png"
+    tempoImg2.src = "./imgs/clima-imgs/snow.png"
+    temperatura.innerHTML="19"
+    statusT.innerHTML="Chuva Forte"
+  } else if(cidades2.value == 'op4'){
+    capacidade.innerHTML= "Capacidade de chuva: 20mm/h"
+    tempoImg1.src = "./imgs/clima-imgs/cloud.png"
+    tempoImg2.src = "./imgs/clima-imgs/cloud.png"
+    temperatura.innerHTML="21"
+    statusT.innerHTML="Chuva Fraca"
+  } else if(cidades2.value == 'op5'){
+    capacidade.innerHTML= "Capacidade de chuva: 30mm/h"
+    tempoImg1.src = "./imgs/clima-imgs/snow.png"
+    tempoImg2.src = "./imgs/clima-imgs/snow.png"
+    temperatura.innerHTML="17"
+    statusT.innerHTML="Chuva Forte"
+  } 
+})
