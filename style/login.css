@@ -37,13 +37,13 @@ body {
   border-radius: 12px;
   box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
   height: 63.3vh;
-  width: 40vh;
+  width: 30vh;
   z-index: 1;
   /* Definição de camada */
 }
 
 .login-img {
-  width: 50vh;
+  width: 46vh;
   padding: 3.5em 0;
 }
 
@@ -107,8 +107,8 @@ body {
 /* Olho */
 #openLEye{
   position: absolute;
-  top: 340px;
-  left: 320px;
+  top: 338px;
+  left: 345px;
 }
 #openLEye:hover{
   cursor: pointer;
@@ -125,7 +125,8 @@ body {
   box-shadow: 0px 1px 8px #ffffff;
   cursor: pointer;
   color: white;
-  margin: 2em auto;
+  padding: 1em;
+  margin: 1em auto;
   height: 42.3px;
   transition: 0.25s;
   width: 153px;
@@ -163,7 +164,7 @@ body {
   box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
   height: 60vh;
   max-height: 60vh;
-  width: 40vh;
+  width: 30vh;
   z-index: -2;
   /* Definição de camada */
 }
@@ -207,6 +208,12 @@ body {
 }
 
 /* Formulario */
+.req-msg{
+  font-size: 0.7em;
+}
+.cadastro-form-content::placeholder {
+  color: rgba(78, 78, 78, 0.432);
+}
 .cadastro-form {
   align-items: left;
   display: flex;
@@ -233,7 +240,7 @@ body {
 /* Olho */
 #openCEye{
   position: absolute;
-  top: 365px;
+  top: 338px;
   left: 320px;
 }
 #openCEye:hover{
@@ -241,7 +248,7 @@ body {
 }
 #openCEye2{
   position: absolute;
-  top: 445px;
+  top: 420px;
   left: 320px;
 }
 #openCEye2:hover{
@@ -275,7 +282,8 @@ body {
   box-shadow: 0px 1px 8px #ffffff;
   cursor: pointer;
   color: white;
-  margin: 2em auto;
+  padding: 1em;
+  margin: 1em auto;
   height: 42.3px;
   transition: 0.25s;
   width: 153px;
