@@ -5,9 +5,11 @@ const loginNav = document.querySelector('#Login')
 window.addEventListener("load", () => {
   console.log("Evento de carregamento acionado");
   let userLog = JSON.parse(localStorage.getItem("userLog"));
+  let coverLogin = document.querySelector("#coverLogin")
   console.log(userLog)
   if (userLog === 1) {
     loginNav.href = 'javascript:void(0);'
+    coverLogin.setAttribute('style', 'visibility: hidden;')
     console.log("Usuario esta logado");
     let userLogado = JSON.parse(localStorage.getItem('logedUser'));
     console.log(userLogado);
@@ -23,6 +25,7 @@ window.addEventListener("load", () => {
     })
   }
 })
+
 
 // //sistema galowather
 let cidades1 = document.querySelector('#cidades1');
@@ -66,7 +69,7 @@ cidades2.addEventListener('change', ()=>{
     temperatura.innerHTML="19"
     statusT.innerHTML="Chuva Forte"
     chuvaP.innerHTML= "35mm/h" 
-    resultadoC.innerHTML="Há risco de enchente, tome cuidado!"
+    resultadoC.innerHTML="Havera enchente!"
   } else if(cidades2.value == 'op4'){
     capacidade.innerHTML= "Capacidade de chuva: 20mm/h"
     tempoImg1.src = "./imgs/clima-imgs/cloud.png"
