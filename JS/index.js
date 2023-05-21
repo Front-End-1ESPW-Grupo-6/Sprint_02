@@ -73,6 +73,8 @@ cidades2.addEventListener('change', ()=>{
     tempoImg2.src = "./imgs/clima-imgs/cloud.png"
     temperatura.innerHTML="21"
     statusT.innerHTML="Chuva Fraca"
+    chuvaP.innerHTML= "3mm/h" 
+    resultadoC.innerHTML="Não há risco de enchente, mas leve um guarda-chuva!"
   } else if(cidades2.value == 'op5'){
     capacidade.innerHTML= "Capacidade de chuva: 30mm/h"
     tempoImg1.src = "./imgs/clima-imgs/snow.png"
