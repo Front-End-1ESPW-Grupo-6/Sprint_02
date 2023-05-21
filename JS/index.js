@@ -65,6 +65,8 @@ cidades2.addEventListener('change', ()=>{
     tempoImg2.src = "./imgs/clima-imgs/snow.png"
     temperatura.innerHTML="19"
     statusT.innerHTML="Chuva Forte"
+    chuvaP.innerHTML= "35mm/h" 
+    resultadoC.innerHTML="Há risco de enchente, tome cuidado!"
   } else if(cidades2.value == 'op4'){
     capacidade.innerHTML= "Capacidade de chuva: 20mm/h"
     tempoImg1.src = "./imgs/clima-imgs/cloud.png"
