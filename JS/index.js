@@ -81,5 +81,7 @@ cidades2.addEventListener('change', ()=>{
     tempoImg2.src = "./imgs/clima-imgs/snow.png"
     temperatura.innerHTML="17"
     statusT.innerHTML="Chuva Forte"
+    chuvaP.innerHTML= "26mm/h" 
+    resultadoC.innerHTML="Há risco de enchente, tome cuidado!"
   } 
 })
