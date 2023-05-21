@@ -70,7 +70,13 @@
                     </div>
                     <div class="tempo-title">
                         <i class="fa-solid fa-location-dot"></i>
-                        <p>&nbsp;São Paulo</p>
+                        <select id="cidades1" class="cidades" name="cidades" onchange="selectCidades()">
+                            <option value="fill">Cidade</option>
+                            <option value="op1">Mocca</option>
+                            <option value="op2">Vila Prudente</option>
+                            <option value="op3">Tatuapé</option>
+                            <option value="op4">Belenzinho</option>
+                        </select>
                     </div>
                     <img src="./imgs/clima-imgs/clear.png" alt="Clima-img">
                     <div class="temperatura">
@@ -103,9 +109,8 @@
 
                         <div class="widget">
                             <div class="tabs">
-                                <input type="radio" name="group" id="tab-1" checked>
-                                <input type="radio" name="group" id="tab-2">
-                                <input type="radio" name="group" id="tab-3">
+                                <input class="radioB" type="radio" name="group" id="tab-1" checked>
+                                <input class="radioB" type="radio" name="group" id="tab-2">
 
                                 <div class="buttons">
                                     <label for="tab-1" class="material-symbols-outlined">Programa</label>
@@ -115,9 +120,32 @@
 
                                 <div class="content">
                                     <div class="content-inner">
-                                        <div>
-                                            <h2>Home</h2>
-                                            
+                                        <div class="simulacro">
+                                            <h2>Simulação</h2>
+                                            <form class="formSimulacro" onsubmit="galoWeather(event)">
+                                                <div class="cidadeSimulacro">
+                                                    <i class="fa-solid fa-location-dot"></i>
+                                                    <select id="cidades2"class="cidades" name="cidades" onchange="selectCidades()">
+                                                        <option value="fill">Cidade</option>
+                                                        <option value="op1">Mocca</option>
+                                                        <option value="op2">Vila Prudente</option>
+                                                        <option value="op3">Tatuapé</option>
+                                                        <option value="op4">Belenzinho</option>
+                                                    </select>
+                                                </div>
+                                                <img src="./imgs/mapa-img/SP Mapa.png">
+                                                <div>
+                                                    <p id="capacidade">placeholder</p>
+                                                </div>
+                                                <div for="precipitacao">
+                                                    <p>Precipitação:</p>
+                                                </div>
+
+                                                <input type="text" id="precipitacao" name="precipitacao">
+                                                <button type="submit">Teste</button>
+                                                <div>
+                                                    <p id="resultado">Menssagem de chuva forte e alagamento</p>
+                                                </div>
                                         </div>
                                         <div>
                                             <h2>Resumo do projeto</h2>
