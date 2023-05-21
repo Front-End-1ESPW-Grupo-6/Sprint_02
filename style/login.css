@@ -105,14 +105,16 @@ body {
 
 /* fim formulario */
 /* Olho */
-#openLEye{
+#openLEye {
   position: absolute;
   top: 338px;
   left: 345px;
 }
-#openLEye:hover{
+
+#openLEye:hover {
   cursor: pointer;
 }
+
 /* Fim Olho */
 /* Começo botão */
 #login-submit-btn {
@@ -208,12 +210,14 @@ body {
 }
 
 /* Formulario */
-.req-msg{
+.req-msg {
   font-size: 0.7em;
 }
+
 .cadastro-form-content::placeholder {
   color: rgba(78, 78, 78, 0.432);
 }
+
 .cadastro-form {
   align-items: left;
   display: flex;
@@ -238,22 +242,26 @@ body {
 
 /* fim formulario */
 /* Olho */
-#openCEye{
+#openCEye {
   position: absolute;
   top: 338px;
   left: 320px;
 }
-#openCEye:hover{
+
+#openCEye:hover {
   cursor: pointer;
 }
-#openCEye2{
+
+#openCEye2 {
   position: absolute;
   top: 420px;
   left: 320px;
 }
-#openCEye2:hover{
+
+#openCEye2:hover {
   cursor: pointer;
 }
+
 /* Fim Olho */
 .sign-up {
   padding: 1.5em 0em;

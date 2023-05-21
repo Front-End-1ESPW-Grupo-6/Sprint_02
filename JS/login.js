@@ -124,40 +124,40 @@ cadastroClick.addEventListener("click", (cadastro) => {
 
 //Evento de olho
 let eyeLogin = document.querySelector('#openLEye')
-eyeLogin.addEventListener('click', ()=>{
+eyeLogin.addEventListener('click', () => {
   const loginPass = document.querySelector("#senha");
-  if(loginPass.getAttribute('type') == 'password'){
-    loginPass.setAttribute("type","text");
-    eyeLogin.setAttribute("class","fa-regular fa-eye");
-  }else{
-    loginPass.setAttribute("type","password");
-    eyeLogin.setAttribute("class","fa-regular fa-eye-slash");
-    
+  if (loginPass.getAttribute('type') == 'password') {
+    loginPass.setAttribute("type", "text");
+    eyeLogin.setAttribute("class", "fa-regular fa-eye");
+  } else {
+    loginPass.setAttribute("type", "password");
+    eyeLogin.setAttribute("class", "fa-regular fa-eye-slash");
+
   }
 })
 
 let eyeCadastro = document.querySelector('#openCEye')
-eyeCadastro.addEventListener('click', ()=>{
+eyeCadastro.addEventListener('click', () => {
   const cadastroPass = document.querySelector("#senhaC");
-  if(cadastroPass.getAttribute('type') == 'password'){
-    cadastroPass.setAttribute("type","text");
-    eyeCadastro.setAttribute("class","fa-regular fa-eye");
-  }else{
-    cadastroPass.setAttribute("type","password");
-    eyeCadastro.setAttribute("class","fa-regular fa-eye-slash");
-    
+  if (cadastroPass.getAttribute('type') == 'password') {
+    cadastroPass.setAttribute("type", "text");
+    eyeCadastro.setAttribute("class", "fa-regular fa-eye");
+  } else {
+    cadastroPass.setAttribute("type", "password");
+    eyeCadastro.setAttribute("class", "fa-regular fa-eye-slash");
+
   }
 })
 
 let eyeCadastro2 = document.querySelector('#openCEye2')
-eyeCadastro2.addEventListener('click', ()=>{
+eyeCadastro2.addEventListener('click', () => {
   const cadastroPass2 = document.querySelector("#senhaCC");
-  if(cadastroPass2.getAttribute('type') == 'password'){
-    cadastroPass2.setAttribute("type","text");
-    eyeCadastro2.setAttribute("class","fa-regular fa-eye");
-  }else{
-    cadastroPass2.setAttribute("type","password");
-    eyeCadastro2.setAttribute("class","fa-regular fa-eye-slash");
-    
+  if (cadastroPass2.getAttribute('type') == 'password') {
+    cadastroPass2.setAttribute("type", "text");
+    eyeCadastro2.setAttribute("class", "fa-regular fa-eye");
+  } else {
+    cadastroPass2.setAttribute("type", "password");
+    eyeCadastro2.setAttribute("class", "fa-regular fa-eye-slash");
+
   }
 })
