@@ -49,7 +49,7 @@ cidades2.addEventListener('change', () => {
   if (cidades2.value == 'op1') {
     capacidade.innerHTML = "Capacidade de chuva: 5mm/h"
     tempoImg1.src = "./imgs/clima-imgs/cloud.png"
-    tempoImg2.src = "../imgs/clima-imgs/cloud.png"
+    tempoImg2.src = "./imgs/clima-imgs/cloud.png"
     temperatura.innerHTML = "20"
     statusT.innerHTML = "Nublado" //alterar essas variaveis para o exemplo do programa
     chuvaP.innerHTML = "1mm/h" //copiar colar e alterar para as opçoes abaixo
